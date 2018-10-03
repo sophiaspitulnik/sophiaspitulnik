@@ -1,0 +1,936 @@
+
+@font-face {
+    font-family: PierSans;
+    src: url(hinted-PierSans.woff);
+}
+
+@font-face {
+    font-family: PierSans;
+    src: url(hinted-PierSans-Bold.woff);
+    font-weight: bold;
+}
+
+
+body, html {
+	font-family: "PierSans", Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4;
+}
+
+hr {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	color: black;
+	background-color: black;
+	height: 2px;
+	border: 0;	
+}
+
+img, video {
+	width: 100%;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+
+p span{
+	font-weight: bold;
+
+}
+
+#comingSoon {
+	position: relative;
+}
+
+#comingSoon:hover .overlay{
+	opacity: 1;
+
+}
+
+#comingSoon:onclick .overlay{
+	opacity: 1;
+
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #FFE845;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 64px;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	opacity: 0.95;
+    filter: alpha(opacity=95);
+
+}
+
+
+.nav h1 {
+	font-size: 12pt;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+	margin: 0px;
+	display: inline;
+}
+
+
+a {
+	color: black;
+
+}
+
+.nav #resume {
+	font-size: 8pt;
+	font-weight: bold;
+	display: inline;
+	text-align: right;
+	padding-left: 36px;
+	text-decoration: underline;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 64px;
+	padding-top: 24px;
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-bottom: 0px;
+}
+
+
+.headerHR {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin-top: 64px;
+}
+
+.coverImage {
+	margin-top: 64px;
+    overflow: auto;
+}
+
+main h3, main h4, main p, #introMessage {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+#introMessage {
+	padding-top: 96px;
+	padding-bottom: 32px;
+	line-height: 1.3;
+
+}
+
+#introMessage h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 36pt;
+}
+
+.projectPreviews img {
+	width: 100%;
+}
+
+.projectPreview {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.07), 0 -4px 8px 0 rgba(0, 0, 0, 0.02), 0 -6px 20px 0 rgba(0, 0, 0, 0.03);
+	/*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 -2px 4px 0 rgba(0,0,0,0.16);*/
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	margin-right: 24px;
+	margin-left: 24px;
+}
+
+
+.projectPreview:hover {
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.17), 0 10px 24px 0 rgba(0, 0, 0, 0.15), 0 -8px 12px 0 rgba(0, 0, 0, 0.08), 0 -10px 24px 0 rgba(0, 0, 0, 0.10);
+	transform: translateY(-2px);
+	transition: .5s ease;
+}
+
+
+.projectPreview h5, .projectPreview h6 {
+	padding-left: 24px;
+	padding-right: 24px;
+	text-decoration: none;
+}
+
+.projectPreview h5 {
+	font-size: 20pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 24px;
+
+}
+
+.projectPreview h6 {
+	font-size: 12pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 8px;
+	padding-bottom: 24px;
+
+}
+
+
+/*Project Page Specific*/
+
+
+.projectPageContent {
+	margin-top: 24px;
+}
+
+.projectPageContent h3 {
+	font-size: 36pt;
+	color: black;
+	margin-bottom: 0px;
+}
+
+.projectPageContent hr {
+	margin-top: -8px;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+
+hr.highLevelCategory {
+	margin-top: -16px;
+	margin-bottom: 48px;
+	padding: 0;
+}
+
+
+.projectPageContent h4{
+	font-size: 16pt;
+	padding-bottom: 2px;
+	margin-bottom: 0px;
+	margin-top: 56px;
+}
+
+
+.projectPageContent p{
+	font-size: 16pt;
+	margin-bottom: 0px;
+	margin-top: 24px;
+}
+
+
+.team {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: 90px;
+}
+
+.teammate {
+	max-width: 40%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-bottom: 24px;
+	padding-top: 24px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.07), 0 -4px 8px 0 rgba(0, 0, 0, 0.02), 0 -6px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.teammate p {
+	font-size: 12px;
+	margin: 0px;
+	padding-top: 4px;
+	padding-right: 0px;
+}
+
+.imageFull {
+	margin-top: 12px;
+}
+
+.imageFit {
+	max-width: 100%;
+	padding-right: 24px;
+	padding-left: 24px;
+	padding-top: 24px;
+}
+
+.firstImage {
+	margin-top: 16px;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+.projectNavigation {
+	display: flex;
+	justify-content: center;
+}
+
+.projectNavigation ul {
+	list-style-type: none;
+	padding-right: 24px;
+	padding-left: 24px;
+	width: 50%;
+}
+
+.projectNavigation li {
+	border: 2px solid;
+	padding: 16px;
+	margin: 16px;
+	text-decoration: underline;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+:target {
+  display: block;
+  position: relative;
+  top: -120px; 
+  visibility: hidden;
+}
+
+
+
+/*The Voting Project Specific*/
+#votingProjectCoverImage {
+	background-color: #238AFC;
+	color: white;
+	padding-right: 24px;
+	padding-left: 24px;
+}
+
+#votingProjectCoverImage h3 {
+	font-size: 24pt;
+	padding-top: 24px;
+	padding-bottom: 16px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+
+#votingProjectCoverImage h4{
+	font-size: 16pt;
+	padding-bottom: 24px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#votingProjectCoverImage mark, .theVotingProjectImportant mark{
+	background-color: #FF2D44;
+	color: white;
+	padding-right: 6px;
+	padding-left: 6px;
+	padding-top: 4px;
+	padding-bottom: 2px;
+}
+
+
+#researchStatistics strong {
+	color: #238AFC;
+	font-size: 48pt;
+}
+
+.researchStatistic {
+	margin-top: 36px;
+}
+
+
+p.researchStatText {
+	margin-top: -24px;
+}
+
+
+#quote strong {
+	color: #FF2D44;
+	font-size: 24px;
+}
+
+#quote p.quoteCitation {
+	margin-top: 0px;
+}
+
+#quote{
+	margin-bottom: 90px;
+	margin-top: 48px;
+}
+
+.theVotingProjectImportant {
+	background-color: #238AFC;
+	color: white;
+	margin-top: 0px;
+}
+
+.theVotingProjectImportant p {
+	margin-top: 0px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	font-size: 36px;
+}
+
+#problemImages {
+	padding-left: 24px;
+	padding-right: 24px;
+	padding-top: 12px;
+}
+
+#problemImages img {
+	margin-bottom: 12px;
+	padding: 0px;
+}
+
+#ideationImage {
+	padding-top: 24px;
+}
+
+
+
+/*BrainGate Specific*/
+#brainGateIntro h3 {
+	margin-top: 0px;
+	font-size: 24pt;
+	color: white;
+	padding-left: 24px;
+}
+
+#brainGateIntro h4 {
+	margin-top: 8px;
+	color: white;
+	padding-left: 24px;
+}
+
+#brainGateIntro {
+	background-color: #FF5B5B;
+	margin-top: 64px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+#brainGateCoverImage {
+		margin-top: 0px;
+}
+
+
+.brainGateImportant {
+	background-color: #FF5B5B;
+	margin-top: 0px;
+}
+
+.brainGateImportant strong {
+	color: white;
+}
+
+.brainGateImportant p {
+	margin-top: 0px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.brainMockup {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.07), 0 -4px 8px 0 rgba(0, 0, 0, 0.02), 0 -6px 20px 0 rgba(0, 0, 0, 0.03);
+	margin-bottom: 12px;
+}
+
+
+@media (min-width: 1000px) {
+
+	.hide {
+		visibility: hidden;
+	}
+
+	#landingPageContent {
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.projectPreviews {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.projectPreview {
+		width: 31%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 16px;
+		padding-bottom: 0px;
+	}
+
+	#introMessage {
+		margin-left: 0px;
+		padding-left: 16px;
+		max-width: 800px;
+		margin-bottom: 0px;
+		margin-top: 48px;
+		padding-top: 0px;
+		/*visibility: hidden;
+		height: 0px;*/
+	}
+
+
+	.nav {
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+
+	/*#introMessage h2 {
+		font-size: 24pt;
+	}*/
+
+
+	.nav #resume {
+		float: right;
+		padding-right: 48px;
+		font-size: 20px;
+	}
+
+
+	.column {
+		width: 750px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	p.column strong {
+		margin-top: 48px;
+		display: block;
+	}
+
+	img.column  {
+		display: block;
+	}
+
+	video.column {
+		display: block;
+		height: auto;
+	}
+
+	.projectPageContent h4 {
+		margin-top: 102px;
+		font-size: 24pt;
+	}
+
+	.projectPageContent h3 {
+		font-size: 48pt;
+		margin-bottom: -36px;
+		margin-top: 150px;
+	}
+
+	hr {
+		height: 3px;
+	}
+
+	.highLevelCategory {
+		visibility: hidden;
+	}
+
+
+	.projectNavigation li {
+		display: inline;
+	}
+
+	.projectNavigation li:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.07), 0 -4px 8px 0 rgba(0, 0, 0, 0.02), 0 -6px 20px 0 rgba(0, 0, 0, 0.03);
+	}
+
+	.projectNavigation ul {
+		width: 100%;
+		padding-top: 24px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+
+	.teammate {
+		max-width: 20%;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 16px;
+		margin-bottom: 16px;
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+
+
+	#votingProjectCoverImage {
+		margin-bottom: 48px;
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+
+	#votingProjectCoverImage h3 {
+		font-size: 48pt;
+	}
+
+	#votingProjectCoverImage h4 {
+		font-size: 24pt;
+	}
+
+	.theVotingProjectImportant p {
+		margin-top: 0px;
+		padding-top: 24px;
+	}
+
+
+	#researchStatistics {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.researchStatistic {
+		width: 40%;
+	}
+
+	#quote {
+		width: 500px;
+		margin: auto;
+		padding-top: 48px;
+	}
+
+	#problemImages {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#problemImages img {
+		width: 30%;
+		height: auto;
+		align-self: center;
+
+	}
+
+	div.projectPreviews.column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.projectPreview {
+		margin-top: 48px;
+		margin-bottom: 48px;
+		/*width: 50%;*/
+	}
+
+	.nextProject {
+		padding-left: 0px;
+	}
+
+
+	.brainMockup {
+		width: 800px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+
+	#brainGateIntro h3 {
+		font-size: 48pt;
+		color: white;
+	}
+
+	#brainGateIntro h4 {
+		font-size: 24pt;
+		color: white;
+	}
+
+	#brainGateIntro {
+		background-color: #FF5B5B;
+		margin-top: 64px;
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+
+	#brainGateCoverImage {
+		margin-top: 0px;
+	}
+
+
+	.brainGateImportant p {
+		font-size: 36px;
+		margin-top: 0px;
+	}
+
+	.brainGateImportant p strong {
+		font-size: 36px;
+		margin-top: 0px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+	.brainWirframes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.brainWirframes img {
+		width: 50%;
+		height: auto;
+		align-self: center;
+	}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+	#landingPageContent {
+		width: 768px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.projectPreviews {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	.projectPreview {
+		width: 32%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-bottom: 16px;
+		padding-bottom: 0px;
+	}
+
+	#introMessage {
+		visibility: hidden;
+		height: 0px;
+	}
+
+	.nav {
+		width: 768px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+
+	.nav #resume {
+		float: right;
+		padding-right: 48px;
+		font-size: 20px;
+	}
+
+
+	.column {
+		width: 750px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	p.column strong {
+		padding-top: 48px;
+		display: block;
+	}
+
+	img.column  {
+		display: block;
+	}
+
+	video.column {
+		display: block;
+	}
+
+	.projectPageContent h4 {
+		margin-top: 102px;
+		font-size: 24pt;
+	}
+
+	.projectPageContent h3 {
+		font-size: 48pt;
+		margin-bottom: -36px;
+		margin-top: 150px;
+	}
+
+	#votingProjectCoverImage {
+		margin-bottom: 48px;
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+
+	#votingProjectCoverImage h3 {
+		font-size: 48pt;
+	}
+
+	#votingProjectCoverImage h4 {
+		font-size: 24pt;
+	}
+
+
+	#researchStatistics {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.researchStatistic {
+		width: 40%;
+	}
+
+	#quote {
+		width: 500px;
+		margin: auto;
+		padding-top: 48px;
+	}
+
+	#problemImages {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.theVotingProjectImportant p {
+		margin-top: 0px;
+		padding-top: 24px;
+	}
+
+	#problemImages img {
+		width: 30%;
+		height: auto;
+		align-self: center;
+
+	}
+
+	div.projectPreviews.column {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.projectPreview {
+		margin-top: 48px;
+		margin-bottom: 48px;
+		/*width: 50%;*/
+	}
+
+	.nextProject {
+		padding-left: 0px;
+	}
+
+
+	hr {
+		height: 3px;
+	}
+
+	.highLevelCategory {
+		visibility: hidden;
+	}
+
+
+	.projectNavigation li {
+		display: inline;
+	}
+
+	.projectNavigation li:hover {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.07), 0 -4px 8px 0 rgba(0, 0, 0, 0.02), 0 -6px 20px 0 rgba(0, 0, 0, 0.03);
+	}
+
+	.projectNavigation ul {
+		width: 100%;
+		padding-top: 24px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+
+
+	.teammate {
+		max-width: 20%;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin-top: 16px;
+		margin-bottom: 16px;
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+
+	.brainMockup {
+		width: 750px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+
+	.brainGateImportant p {
+		font-size: 36px;
+		margin-top: 0px;
+	}
+
+	.brainGateImportant p strong {
+		font-size: 36px;
+		margin-top: 0px;
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
+
+
+
+	#brainGateIntro h3 {
+		font-size: 48pt;
+		color: white;
+	}
+
+	#brainGateIntro h4 {
+		font-size: 24pt;
+		color: white;
+	}
+
+	#brainGateIntro {
+		background-color: #FF5B5B;
+		margin-top: 64px;
+		padding-top: 48px;
+		padding-bottom: 48px;
+	}
+
+	#brainGateCoverImage {
+		margin-top: 0px;
+	}
+
+	.brainWirframes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.brainWirframes img {
+		width: 50%;
+		height: auto;
+		align-self: center;
+	}
+
+
+}
+
+
+
+
+

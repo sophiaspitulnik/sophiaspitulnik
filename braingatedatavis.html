@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<!-- Made by Sophia Spitulnik, set in Pier Sans. -->
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="Sophia Spitulnik is a designer and innovator. Sophia creates engaging experiences, products, interactions and designs that lead to positive social impact. She is a student at RISD majoring in Graphic Design with concentrations in Computation & Technology and Sustainability.">
+	    <meta name="author" content="Sophia Spitulnik">
+	    <title>Sophia Spitulnik</title>
+	    <meta property="og:image" content="">
+		<meta property="og:url" content="sophiaspitulnik.com/braingatedatavis">
+	    <link rel="stylesheet" href="styles.css">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="icon" type="image/png" href="" /> <!-- GET ICON -->
+	</head>
+	<body>
+		<!-- header -->
+		<div class="header"></div>
+		<div class="nav column"> 
+			<a href="index.html"><h1>Sophia Spitulnik</h1></a>	
+		</div>
+		<hr class="headerHR">
+
+		<!-- intro -->
+		<div id="brainGateIntro">
+			<h3 class="column">BrainGate Data Visualization</h3>
+			<h4 class="column">An interactive data visualization for a  neuroscience research group.</h4>
+		</div>
+
+		<div class="coverImage" id="brainGateCoverImage">
+			<img src="images/BrainGateAssets/BrainGateCoverImage.jpg" alt="Data Visulization Preview">
+		</div>
+
+		<!-- project content -->
+		<main class="projectPageContent">
+
+			<!-- background info -->
+			<a id="brainBackground"></a>
+			<h3 class="column">Background</h3>
+			<hr class="highLevelCategory">
+			<h4 class="column">Overview</h4>
+			<hr>
+			<p class="column"><a href="https://www.braingate.org/" class="link">BrainGate,</a> a research institution at Brown University, is working to restore the independence of people affected by neurologic disease by developing technologies that allow patients to control a computer interface with their brains. While patients use this technology, the BrainGate researchers collect data on the patients’ cursor movements and clicks. In order to improve their technology, the researchers needed an intuitive way to visualize and analyze the data they collect. I worked with a team of Computer Science students at Brown University to design and develop an interactive data visualization tool for the BrainGate researchers.</p>
+			<p class="column"> This page is divided into sections: </p>
+			<div class="projectNavigation column">
+				<ul>
+					<li><a href="#brainBackground"">Background</a></li>
+					<li><a href="#brainProcess">Process</a></li>
+					<li><a href="#brainIdeation">Ideation</a></li>
+					<li><a href="#brainMocks">Mockups and Prototype</a></li>
+					<li><a href="#brainReflection">Reflection</a></li>
+				</ul>
+			</div>
+			<h4 class="column">Scope</h4>
+			<hr>
+			<p class="column">This project was done over the course of a semester as part of a Computer Science class at Brown titled “Creating Modern Web Applications.” Each student group was assigned a client in the Brown or Providence community, in addition to class assignments. During this project we: Interviewed our users (the BrainGate researchers), wrote user stories, wireframed different design solutions, created high fidelity mockups, wrote specifications and requirements, researched frontend and backend technologies that would meet our needs, developed a working prototype, presented to our class and our client, had weekly meetings with the BrainGate engineering team (our client) and some of the researchers to understand their needs and get their feedback on ideas, wireframes, mockups and prototypes.</p>
+			<h4 class="column">Tools</h4>
+			<hr>
+			<p class="column">Google drive, Github, Sketch, Illustrator, pens and paper, whiteboards, Sublime, Google Chrome</p>
+			<h4 class="column">Team</h4>
+			<hr>
+				<div class="team column">
+					<div class="teammate">
+						<a href="https://www.audreykintisch.com/" target="blank">
+							<img src="images/BrainGateAssets/audrey.jpg" alt="Audrey" height="" width="">
+							<p class="link"><strong>Audrey</strong></p>
+							<p>Front End Developer</p>
+						</a>
+					</div>
+					<div class="teammate">
+						<img src="images/BrainGateAssets/jean.jpg" alt="Jean" height="" width="">
+						<p><strong>Jean</strong></p>
+						<p>Front End Developer</p>
+					</div>
+					<div class="teammate">
+						<img src="images/TheVotingProjectAssets/placeholderHeadshot.jpg" alt="Marcin" height="" width="">
+						<p><strong>Marcin</strong></p>
+						<p>Back End Developer</p>
+					</div>
+					<div class="teammate">
+						<img src="images/TheVotingProjectAssets/placeholderHeadshot.jpg" alt="Zhengyi" height="" width="">
+						<p><strong>Zhengyi</strong></p>
+						<p>Front End Developer</p>
+					</div>
+					<div class="teammate">
+						<img src="images/TheVotingProjectAssets/theVotingProjectSophiaHeadshot.jpg" alt="Sophia" height="" width="">
+						<p><strong>Sophia (me!)</strong></p>
+						<p>Experience Designer</p>
+					</div>
+				</div>
+
+
+			<!-- Process -->
+			<a id="brainProcess"></a>	
+			<h3 class="column">Process</h3>
+			<hr class="highLevelCategory">
+
+			<!-- Original Problem Statement -->
+			<h4 class="column">Original Problem Statement</h4>
+			<hr>
+			<div class="brainGateImportant">
+				<p class="column"><strong>Our client, the BrainGate engineering team, needed a way for the BrainGate researchers to better visualize their data.</strong></p>
+			</div>
+
+			<!-- Our Users -->
+			<h4 class="column">Our Users</h4>
+			<hr>
+			<p class="column"><strong>The BrainGate Researchers</strong></p>
+			<p></p>
+			<p class="column"><strong>Interviews:</strong> We began this project by interviewing a few of our users to learn about their jobs, the tools they use and their day to day experiences. This project is very unique in that we have a very small and specific user group that could quickly give us feedback and who can continue to improve their program as they use it.</p>
+			<img src="images/BrainGateAssets/researcherIcons.jpg" alt="researchers" class="column">
+			<p class="column"><strong>A summary of what we learned:</strong> The researchers are responsible for running sessions where a patient can use the BrainGate technology. While the researchers observe the patients using the system, they collect a lot of numerical data. For example, they collect data on the movement of the cursor over time and how accurate the participant was with the cursor. They take qualitative notes on their sessions with the patients in Word documents. The researchers would like to be able to see this data in a visual format, instead of trying to compare or analyze pure numbers. The researchers are interested in troubleshooting the BrainGate system by comparing the results of different settings, and visualizing the data collected after each session. Specifically, they are interested in visualizing the position and trajectory of the cursor over time, and being able to create filters for the data collected.</p>
+
+
+			<!-- New Problem Statement -->
+			<h4 class="column">New Problem Statement</h4>
+			<hr>
+			<p class="column">After conducting user interviews and learning more about the problem we redefined our problem statement:</p>
+			<div class="firstImage"></div>
+			<div class="brainGateImportant">
+				<p class="column"><strong>The BrainGate researchers need a way to organize their data, visualize patient cursor movements overtime and annotate data based on their observations.</strong></p>
+			</div>
+			<p class="column">Before this project, the BrainGate researchers had no real way to visualize the data they collect about the patients’ cursor movement overtime other than just data coordinates, time stamps and what as provided to them in matlab. They also collect notes about their sessions with the patients using this technology in Word documents and record things like “at 0:45 seconds someone made a loud noise in the background and caused a distraction.” The notes were disconnected from the data points. All of their data was stored in MatLab files and not in a database.</p>
+
+
+			<!-- Ideation -->
+			<a id="brainIdeation"></a>
+			<h3 class="column">Ideation</h3>
+			<hr class="highLevelCategory">
+
+			<!-- Wireframing -->
+			<h4 class="column">Wireframing</h4>
+			<hr>
+			<p class="column">After our initial conversations with the BrainGate engineering team and interviews with some of the researchers I sketched some ideas.</p>
+			<div class="imageFit column brainWirframes">
+				<img src="images/BrainGateAssets/sketch1.jpg" alt="sketch">
+				<img src="images/BrainGateAssets/sketch2.jpg" alt="sketch">
+				<img src="images/BrainGateAssets/sketch3.jpg" alt="sketch">
+			</div>
+			<p class="column">Each time I met with the BrainGate team I got some feedback on the wireframes and continued to iterate. See the mockups section for descriptions of design decisions and the functions of specific parts of this data visualization.</p>
+			<div class="imageFit column brainWirframes">
+				<img src="images/BrainGateAssets/notesTimeline.jpeg" alt="sketch">
+				<img src="images/BrainGateAssets/wireframe1.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe2.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe3.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe4.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe5.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe6.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe7.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe8.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe9.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe10.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe11.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe12.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe13.jpg" alt="wireframe">
+				<img src="images/BrainGateAssets/wireframe14.jpg" alt="wireframe">
+			</div>
+
+
+			<!-- User Flows -->
+			<h4 class="column">User Flows</h4>
+			<hr>
+			<img src="images/BrainGateAssets/flow.jpg" alt="user flow" height="" width="">
+			<img src="images/BrainGateAssets/noteInteractions.jpg" alt="user flow" height="" width="">
+
+
+			<!-- Mockups and Prototype -->
+			<a id="brainMocks"></a>
+			<h3 class="column">Mockups and Prototype</h3>
+			<hr class="highLevelCategory">
+
+			<!-- Mockups -->
+			<h4 class="column">Mockups</h4>
+			<hr>
+			<p class="column">This mockup has many parts to it. I will explain each section below.</p>
+			<div class="imageFit">
+				<img src="images/BrainGateAssets/mainMockupBrowser.png" alt="mockup" class="column">
+				<img src="images/BrainGateAssets/mockUpDiagram.jpg" alt="mockup diagram">
+			</div>
+			<p class="column"><strong>Timeline</strong></p>
+			<p class="column">One of the biggest challenges was visualizing X and Y coordinates over time. I used inspiration from YouTube as well as other video and music players to design a timeline that the researchers could use to play through or scrub through the “recording” of each session. The timeline includes markers to show that a note was added at a specific time.</p>
+			<img src="images/BrainGateAssets/timeline.jpg" alt="timeline" class="column">
+			<p class="column">If the user hovers over a timeline marker then the note is lightly highlighted and if the user clicks on the timeline marker then the note is highlighted. They can also see a preview of the graph at that time by hovering.</p>
+			<div class="imageFit">
+				<img src="images/BrainGateAssets/selectTimelineMockup.jpg" alt="timeline preview" class="brainMockup">
+				<img src="images/BrainGateAssets/hoverTimelineMockup.jpg" alt="timeline select note" class="brainMockup">
+			</div>
+			<p class="column"><strong>Graph</strong></p>
+			<p class="column">This is where the researchers can view the X and Y coordinates of the patients cursor. When the researchers are calibrating the system for the patient and testing different parameters, the researchers have the patients play a series of “games. ” In our mockups and prototypes we decided to focus on analyzing the data that was collected in this game. However, in the future, any cursor data (not just game data) could be analyzed using this program. In this game, the patient is aiming to move the cursor to the light blue target.</p>
+			<div class="imageFit column">
+				<img src="images/BrainGateAssets/mockupGraphSingleTrial.JPEG" alt="graph single view">
+			</div>
+			<p class="column">While the position of the patient’s cursor at any given moment is important, where the cursor was and where it will go in relation to its current position is also very important. To visualize this information, I included a line that shows the future of the cursors pathway as well as the past of the cursors pathway. There is also a “full view” where the researchers can view all of the cursor movements for the entire session with the patient.</p>
+			<div class="imageFit column">
+				<img src="images/BrainGateAssets/mockupGraphAllTrials.jpeg" alt="graph full view">
+			</div>
+			<p class="column">The red dot is the “current” location of the patient’s cursor and the blue dot(s) is the place where the patient “clicked”.</p>
+			<video width="320" height="240" controls class="column">
+  				<source src="images/BrainGateAssets/oneTrialPlay.mp4" type="video/mp4">
+  				Your browser does not support the video tag.
+			</video>
+			<video width="320" height="240" controls class="column">
+  				<source src="images/BrainGateAssets/fullViewScrub.mp4" type="video/mp4">
+  				Your browser does not support the video tag.
+			</video>
+			<p class="column"><strong>Notes</strong></p>
+			<p class="column">The user can add notes at specific times. For example, if a researcher sees a cursor jump at 0:20 seconds, they can add a note at that time with the tag “jump”. The user can refer back to these notes later or another researcher can review the notes to better understand the session.</p>
+			<div class="imageFit">
+				<img src="images/BrainGateAssets/mockupAddNote.jpg" alt="add note" class="brainMockup">
+			</div>
+			<p class="column">If a user hovers over one of the notes they will see a preview on the timeline at the time that the note was taken.</p>
+			<div class="imageFit">
+				<img src="images/BrainGateAssets/mockupHoverNote.jpg" alt="preview note" class="brainMockup">
+			</div>
+			<p class="column">If a user clicks on one of the notes it takes them to the time the note was taken on the timeline and graph.</p>
+			<div class="imageFit">
+				<img src="images/BrainGateAssets/mockupGoToNote.jpg" alt="select note" class="brainMockup">
+			</div>
+			<p class="column"><strong>Filters</strong></p>
+			<p class="column">In order to load the data into the program, the users can select specific intervals of data based on filters. For example, some of the filters include things like the date the data was recorded, the name of the patient and the type of task the patient was doing. As the researchers analyze the data, they will add notes and tags such as “distraction”, “jitter”, “jump” or other tags that they decide are necessary. They will then be able to filter for and open data based on these tags.</p>
+			<div class="imageFit">
+				<img src="images/BrainGateAssets/mockupfilters.jpg" alt="filters" class="brainMockup">
+				<img src="images/BrainGateAssets/mockupDateFilter.jpg" alt="filter date" class="brainMockup">
+				<img src="images/BrainGateAssets/mockupPatientFilter.jpg" alt="filter patient" class="brainMockup">
+			</div>
+			<p class="column"><strong>Three Views</strong></p>
+			<p class="column">There is a “full view” where the researchers can view all of the cursor movements for the entire session with the patient. There is a one session view where the researcher can view only one trial at a time with lines indicating the pathway of the cursor. There is a parameters view where the researchers can view all of the specific parameters that were set during the session. A few of the most important parameters can be viewed in the full view and in the one session view, but a more extensive list of all the parameters can be seen in the parameters view. </p>
+
+
+			<!-- Prototype -->
+			<h4 class="column">Prototype</h4>
+			<hr>
+			<video width="320" height="240" controls class="column">
+  				<source src="images/BrainGateAssets/prototype.mp4" type="video/mp4">
+  				Your browser does not support the video tag.
+			</video>
+			<p class="column">We built a working prototype of this program. It was a great learning experience to work with a team of engineers to actually build something that I designed. We used a local MongoDB database (with our data converted to JSON from Matlab files), svg.js library for the graph and timeline and RESTful API to load the data into the program. <a href="https://docs.google.com/document/d/1DZTQ7sS_kZAFwXXELdVogNf9LbQskyMhvoZkb3-KoYo/edit?usp=sharing" class="link">Read more about the design of the program here.</a></p>
+			<p class="column"><a href="https://github.com/akreator/braingate" class="link">You can also check out our code and documentation here.</a></p>
+
+
+
+			<!-- Reflection -->
+			<a id="brainReflection"></a>
+			<h3 class="column">Reflection</h3>
+			<hr class="highLevelCategory">
+			<p class="column">The clients and researchers gave very positive feedback to our final presentation of our prototype. It was very rewarding to see that something I worked on would be used to help hardworking researchers make a positive impact in patients’ lives. It was a great learning experience to work with a client, a group of users as well as a team of engineers. I learned about understanding users’ needs, asking good questions, designing a creative experience, communicating my design decisions to clients and engineers and web app technologies. This project will be a memorable one because of the awesome people that I had the opportunity to work with and because the project will help in BrainGate’s mission to give patients with neurological disorders more independence.</p>
+
+			<!-- Next Project -->
+			<div class="projectPreviews column">
+				<h3 class="nextProject">Next Project</h3>
+				<div class="projectPreview"><a href="thevotingproject.html">
+						<img src="images/landingPageAssets/theVotingProjectPreview.jpg" alt="The Voting Project" height="" width="">
+						<h5>The Voting Project</h5>
+						<h6>A case study for a campaign to encourage  Generation Z to vote.</h6>
+				</a></div>
+				<!-- <a href="expressiveonomatopoeias.html"><div class="projectPreview">
+						<img src="images/landingPageAssets/OnomatopoeiaPreview.gif" alt="Expressive Onomatopoeias" height="" width="">
+						<h5>Expressive Onomatopoeias</h5>
+						<h6>A study of nonverbal communication in texting.</h6>
+				</div></a> -->
+			</div>
+
+
+
+		</main>
+
+	</body>
+</html>
