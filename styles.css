@@ -246,7 +246,8 @@ hr.highLevelCategory {
 }
 
 .teammate {
-	max-width: 40%;
+	flex: 0 0 20%;
+	/*max-width: 40%;*/
 	padding-left: 5%;
 	padding-right: 5%;
 	padding-bottom: 24px;
