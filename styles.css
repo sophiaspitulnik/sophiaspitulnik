@@ -42,19 +42,35 @@ p span{
 
 }
 
-#comingSoon {
+
+video.column {
+	margin-bottom: 24px;
+}
+
+/*#comingSoon {
 	position: relative;
 }
 
-#comingSoon:hover .overlay{
+#comingSoon:hover .overlay {
 	opacity: 1;
 
+}*/
+
+#comingSoonMobil {
+	position: relative;
+	display: block;
+	height: 100%;
 }
 
-#comingSoon:onclick .overlay{
+a#comingSoonMobil:hover .overlay {
 	opacity: 1;
-
 }
+
+a#comingSoonMobil:focus .overlay, a#comingSoonMobil:active .overlay {
+	opacity: 1;
+	background-color: green;
+}
+
 
 .overlay {
 	position: absolute;
@@ -67,6 +83,7 @@ p span{
 	opacity: 0;
 	transition: .5s ease;
 	background-color: #FFE845;
+	z-index: 100;
 }
 
 .header {
@@ -79,6 +96,7 @@ p span{
 	background-color: white;
 	opacity: 0.95;
     filter: alpha(opacity=95);
+    z-index: 100;
 
 }
 
@@ -117,6 +135,7 @@ a {
 	padding-left: 24px;
 	padding-right: 24px;
 	padding-bottom: 0px;
+	z-index: 110;
 }
 
 
@@ -125,6 +144,7 @@ a {
 	top: 0;
 	width: 100%;
 	margin-top: 64px;
+	z-index: 110;
 }
 
 .coverImage {
@@ -138,16 +158,17 @@ main h3, main h4, main p, #introMessage {
 }
 
 #introMessage {
-	padding-top: 96px;
+	padding-top: 80px;
 	padding-bottom: 32px;
-	line-height: 1.3;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
 
 }
 
 #introMessage h2 {
-	margin-top: 0px;
-	margin-bottom: 0px;
 	font-size: 36pt;
+	line-height: 1.3;
 }
 
 .projectPreviews img {
@@ -186,17 +207,23 @@ main h3, main h4, main p, #introMessage {
 }
 
 .projectPreview h6 {
-	font-size: 12pt;
+	font-size: 16pt;
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-top: 8px;
-	padding-bottom: 24px;
+	padding-bottom: 40px;
+	font-weight: normal;
 
 }
 
 
 /*Project Page Specific*/
 
+
+.basicText {
+	font-size: 16pt;
+	padding-bottom: 24pt;
+}
 
 .projectPageContent {
 	margin-top: 24px;
@@ -222,7 +249,7 @@ hr.highLevelCategory {
 }
 
 
-.projectPageContent h4{
+.projectPageContent h4 {
 	font-size: 16pt;
 	padding-bottom: 2px;
 	margin-bottom: 0px;
@@ -230,7 +257,7 @@ hr.highLevelCategory {
 }
 
 
-.projectPageContent p{
+.basicText p {
 	font-size: 16pt;
 	margin-bottom: 0px;
 	margin-top: 24px;
@@ -246,7 +273,7 @@ hr.highLevelCategory {
 }
 
 .teammate {
-	flex: 0 0 20%;
+	flex: 0 0 40%;
 	/*max-width: 40%;*/
 	padding-left: 5%;
 	padding-right: 5%;
@@ -318,6 +345,9 @@ hr.highLevelCategory {
 	color: white;
 	padding-right: 24px;
 	padding-left: 24px;
+	margin-top: 64px;
+	padding-top: 64px;
+	padding-bottom: 64px;
 }
 
 #votingProjectCoverImage h3 {
@@ -386,6 +416,7 @@ p.researchStatText {
 	padding-top: 48px;
 	padding-bottom: 48px;
 	font-size: 36px;
+	font-weight: bold;
 }
 
 #problemImages {
@@ -420,7 +451,7 @@ p.researchStatText {
 }
 
 #brainGateIntro {
-	background-color: #FF5B5B;
+	background-color: #404B5A;
 	margin-top: 64px;
 	padding-top: 48px;
 	padding-bottom: 48px;
@@ -454,8 +485,34 @@ p.researchStatText {
 
 @media (min-width: 1000px) {
 
+	.basicText {
+		margin-top: 40px;
+		font-size: 14pt;
+		line-height: 1.5;
+	}
+
+
 	.hide {
 		visibility: hidden;
+	}
+
+
+	.projectPreview h5 {
+		font-size: 14pt;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 24px;
+
+	}
+
+	.projectPreview h6 {
+		font-size: 10pt;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 8px;
+		padding-bottom: 40px;
+		font-weight: normal;
+
 	}
 
 	#landingPageContent {
@@ -476,8 +533,9 @@ p.researchStatText {
 		width: 31%;
 		margin-left: 0px;
 		margin-right: 0px;
-		margin-bottom: 16px;
 		padding-bottom: 0px;
+		margin-top: 32px;
+		margin-bottom: 48px;
 	}
 
 	#introMessage {
@@ -485,8 +543,9 @@ p.researchStatText {
 		padding-left: 16px;
 		max-width: 800px;
 		margin-bottom: 0px;
-		margin-top: 48px;
+		margin-top: 64px;
 		padding-top: 0px;
+		padding-bottom: 0px;
 		/*visibility: hidden;
 		height: 0px;*/
 	}
@@ -498,10 +557,6 @@ p.researchStatText {
 		margin-left: auto;
 		display: block;
 	}
-
-	/*#introMessage h2 {
-		font-size: 24pt;
-	}*/
 
 
 	.nav #resume {
@@ -532,13 +587,13 @@ p.researchStatText {
 	}
 
 	.projectPageContent h4 {
-		margin-top: 102px;
+		margin-top: 200px;
 		font-size: 24pt;
 	}
 
 	.projectPageContent h3 {
 		font-size: 48pt;
-		margin-bottom: -36px;
+		margin-bottom: -160px;
 		margin-top: 150px;
 	}
 
@@ -568,7 +623,7 @@ p.researchStatText {
 
 
 	.teammate {
-		max-width: 20%;
+		flex: 0 0 20%;
 		padding-left: 5%;
 		padding-right: 5%;
 		margin-top: 16px;
@@ -580,22 +635,27 @@ p.researchStatText {
 
 
 	#votingProjectCoverImage {
-		margin-bottom: 48px;
-		padding-top: 96px;
-		padding-bottom: 96px;
+		margin-top: 64px;
+		padding-top: 200px;
+		padding-bottom: 200px;
 	}
 
 	#votingProjectCoverImage h3 {
-		font-size: 48pt;
+		font-size: 40pt;
+		color: white;
+		margin-bottom: 0px;
 	}
 
 	#votingProjectCoverImage h4 {
 		font-size: 24pt;
+		color: white;
+		font-weight: normal;
 	}
 
 	.theVotingProjectImportant p {
 		margin-top: 0px;
-		padding-top: 24px;
+		padding-top: 64px;
+		padding-bottom: 64px;
 	}
 
 
@@ -633,14 +693,14 @@ p.researchStatText {
 		justify-content: space-between;
 	}
 
-	.projectPreview {
-		margin-top: 48px;
-		margin-bottom: 48px;
-		/*width: 50%;*/
-	}
-
 	.nextProject {
 		padding-left: 0px;
+	}
+
+	h3.nextProject {
+		font-size: 48px;
+		margin-top: 150px;
+		margin-bottom: 0px;
 	}
 
 
@@ -652,20 +712,22 @@ p.researchStatText {
 	}
 
 	#brainGateIntro h3 {
-		font-size: 48pt;
+		font-size: 40pt;
 		color: white;
+		margin-bottom: 40px;
 	}
 
 	#brainGateIntro h4 {
 		font-size: 24pt;
 		color: white;
+		font-weight: normal;
 	}
 
 	#brainGateIntro {
-		background-color: #FF5B5B;
+		background-color: #404B5A;
 		margin-top: 64px;
-		padding-top: 48px;
-		padding-bottom: 48px;
+		padding-top: 128px;
+		padding-bottom: 128px;
 	}
 
 	#brainGateCoverImage {
@@ -701,6 +763,14 @@ p.researchStatText {
 
 
 @media (min-width: 768px) and (max-width: 1000px) {
+	
+	.basicText {
+		margin-top: 40px;
+		font-size: 14pt;
+		line-height: 1.5;
+	}
+
+
 	#landingPageContent {
 		width: 768px;
 		margin-right: auto;
@@ -723,9 +793,58 @@ p.researchStatText {
 		padding-bottom: 0px;
 	}
 
-	#introMessage {
+	/*#introMessage {
 		visibility: hidden;
 		height: 0px;
+	}*/
+
+	.hide {
+		visibility: hidden;
+	}
+
+	#introMessage {
+		margin-left: 0px;
+		padding-left: 16px;
+		max-width: 800px;
+		margin-bottom: 0px;
+		margin-top: 64px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		/*visibility: hidden;
+		height: 0px;*/
+	}
+
+
+	.nav {
+		width: 1000px;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+
+
+	.nav #resume {
+		float: right;
+		padding-right: 48px;
+		font-size: 20px;
+	}
+
+	.projectPreview h5 {
+		font-size: 14pt;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 24px;
+
+	}
+
+	.projectPreview h6 {
+		font-size: 10pt;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-top: 8px;
+		padding-bottom: 40px;
+		font-weight: normal;
+
 	}
 
 	.nav {
@@ -762,28 +881,32 @@ p.researchStatText {
 	}
 
 	.projectPageContent h4 {
-		margin-top: 102px;
+		margin-top: 200px;
 		font-size: 24pt;
 	}
 
 	.projectPageContent h3 {
 		font-size: 48pt;
-		margin-bottom: -36px;
+		margin-bottom: -160px;
 		margin-top: 150px;
 	}
 
 	#votingProjectCoverImage {
-		margin-bottom: 48px;
-		padding-top: 96px;
-		padding-bottom: 96px;
+		margin-top: 64px;
+		padding-top: 200px;
+		padding-bottom: 200px;
 	}
 
 	#votingProjectCoverImage h3 {
-		font-size: 48pt;
+		font-size: 40pt;
+		color: white;
+		margin-bottom: 0px;
 	}
 
 	#votingProjectCoverImage h4 {
 		font-size: 24pt;
+		color: white;
+		font-weight: normal;
 	}
 
 
@@ -810,7 +933,8 @@ p.researchStatText {
 
 	.theVotingProjectImportant p {
 		margin-top: 0px;
-		padding-top: 24px;
+		padding-top: 64px;
+		padding-bottom: 64px;
 	}
 
 	#problemImages img {
@@ -834,6 +958,12 @@ p.researchStatText {
 
 	.nextProject {
 		padding-left: 0px;
+	}
+
+	h3.nextProject {
+		font-size: 48px;
+		margin-top: 150px;
+		margin-bottom: 0px;
 	}
 
 
@@ -864,7 +994,7 @@ p.researchStatText {
 
 
 	.teammate {
-		max-width: 20%;
+		flex: 0 0 20%;
 		padding-left: 5%;
 		padding-right: 5%;
 		margin-top: 16px;
@@ -896,20 +1026,22 @@ p.researchStatText {
 
 
 	#brainGateIntro h3 {
-		font-size: 48pt;
+		font-size: 40pt;
 		color: white;
+		margin-bottom: 40px;
 	}
 
 	#brainGateIntro h4 {
 		font-size: 24pt;
 		color: white;
+		font-weight: normal;
 	}
 
 	#brainGateIntro {
-		background-color: #FF5B5B;
+		background-color: #404B5A;
 		margin-top: 64px;
-		padding-top: 48px;
-		padding-bottom: 48px;
+		padding-top: 128px;
+    	padding-bottom: 128px;
 	}
 
 	#brainGateCoverImage {
