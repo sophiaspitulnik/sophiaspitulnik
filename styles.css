@@ -505,6 +505,19 @@ p.researchStatText {
 
 @media (min-width: 1000px) {
 
+	
+	.header {
+		height: 40px;
+
+	}
+
+	.headerHR {
+		margin-top: 40px;
+
+	}
+
+
+
 	.basicText {
 		margin-top: 40px;
 		font-size: 14pt;
@@ -588,6 +601,7 @@ p.researchStatText {
 		margin-right: auto;
 		margin-left: auto;
 		display: block;
+		padding-top: 12px;
 	}
 
 
@@ -604,7 +618,7 @@ p.researchStatText {
 
 
 	.column {
-		width: 750px;
+		width: 600px;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -642,9 +656,12 @@ p.researchStatText {
 		visibility: hidden;
 	}
 
+	.projectNavigation {
+		justify-content: left;
+	}
 
 	.projectNavigation li {
-		display: inline;
+		display: block;
 	}
 
 	.projectNavigation li:hover {
@@ -652,10 +669,11 @@ p.researchStatText {
 	}
 
 	.projectNavigation ul {
-		width: 100%;
-		padding-top: 24px;
+		width: 30%;
+		padding-top: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
+		margin-top: 0px;
 	}
 
 
@@ -672,7 +690,7 @@ p.researchStatText {
 
 
 	#votingProjectCoverImage {
-		margin-top: 64px;
+		margin-top: 40px;
 		padding-top: 200px;
 		padding-bottom: 200px;
 	}
@@ -763,7 +781,7 @@ p.researchStatText {
 
 	#brainGateIntro {
 		background-color: #404B5A;
-		margin-top: 64px;
+		margin-top: 40px;
 		padding-top: 128px;
 		padding-bottom: 128px;
 	}
@@ -771,7 +789,7 @@ p.researchStatText {
 
 	#OnomatopoeiaIntro {
 		background-color: #FFE845;
-		margin-top: 64px;
+		margin-top: 40px;
 		padding-top: 128px;
 		padding-bottom: 128px;
 	}
@@ -822,6 +840,16 @@ p.researchStatText {
 
 @media (min-width: 768px) and (max-width: 1000px) {
 	
+	.header {
+		height: 40px;
+
+	}
+
+	.headerHR {
+		margin-top: 40px;
+
+	}
+
 	.basicText {
 		margin-top: 40px;
 		font-size: 14pt;
@@ -888,6 +916,7 @@ p.researchStatText {
 		margin-right: auto;
 		margin-left: auto;
 		display: block;
+		padding-top: 12pt;
 	}
 
 
@@ -935,7 +964,7 @@ p.researchStatText {
 
 
 	.column {
-		width: 750px;
+		width: 600px;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -965,7 +994,7 @@ p.researchStatText {
 	}
 
 	#votingProjectCoverImage {
-		margin-top: 64px;
+		margin-top: 40px;
 		padding-top: 200px;
 		padding-bottom: 200px;
 	}
@@ -1043,9 +1072,13 @@ p.researchStatText {
 		visibility: hidden;
 	}
 
+	.projectNavigation {
+		justify-content: left;
+	}
+
 
 	.projectNavigation li {
-		display: inline;
+		display: block;
 	}
 
 	.projectNavigation li:hover {
@@ -1053,10 +1086,11 @@ p.researchStatText {
 	}
 
 	.projectNavigation ul {
-		width: 100%;
-		padding-top: 24px;
+		width: 30%;
+		padding-top: 0px;
 		padding-left: 0px;
 		padding-right: 0px;
+		margin-top: 0px;
 	}
 
 
@@ -1107,14 +1141,14 @@ p.researchStatText {
 
 	#brainGateIntro {
 		background-color: #404B5A;
-		margin-top: 64px;
+		margin-top: 40px;
 		padding-top: 128px;
     	padding-bottom: 128px;
 	}
 
 	#OnomatopoeiaIntro {
 		background-color: #FFE845;
-		margin-top: 64px;
+		margin-top: 40px;
 		padding-top: 128px;
     	padding-bottom: 128px;
 	}
