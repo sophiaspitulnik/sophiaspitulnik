@@ -526,14 +526,15 @@ p.researchStatText {
 	}
 
 	.projectPreview h6 {
-		font-size: 10pt;
+		font-size: 14pt;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		padding-top: 8px;
+		padding-top: 12px;
 		padding-bottom: 40px;
 		font-weight: normal;
 
 	}
+
 
 	#landingPageContent {
 		width: 1000px;
@@ -555,8 +556,18 @@ p.researchStatText {
 		margin-left: 0px;
 		margin-right: 0px;
 		padding-bottom: 0px;
-		margin-top: 32px;
+		margin-top: 16px;
+		margin-bottom: 0px;
+	}
+
+	.bottom {
+		padding-top: 0px;
+		margin-top: 0px;
 		margin-bottom: 48px;
+	}
+
+	.top {
+		margin-bottom: 32px;
 	}
 
 	#introMessage {
@@ -564,7 +575,7 @@ p.researchStatText {
 		padding-left: 16px;
 		max-width: 800px;
 		margin-bottom: 0px;
-		margin-top: 64px;
+		margin-top: -64px;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		/*visibility: hidden;
@@ -584,6 +595,11 @@ p.researchStatText {
 		float: right;
 		padding-right: 48px;
 		font-size: 20px;
+		position: static;
+	}
+
+	#dtResume {
+		position: static;
 	}
 
 
@@ -712,11 +728,7 @@ p.researchStatText {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-	}
 
-	.bottom {
-		padding-top: 0px;
-		margin-top: 0px;
 	}
 
 	.nextProject {
@@ -823,31 +835,36 @@ p.researchStatText {
 		margin-left: auto;
 	}
 
+
 	.projectPreviews {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		padding-left: 16px;
 		padding-right: 16px;
+		flex-wrap: wrap;
+	}
+
+	.projectPreview {
+		width: 48%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
 	}
 
 	.bottom {
 		padding-top: 0px;
-		margin-top: 0px;
-	}
-
-	.projectPreview {
-		width: 32%;
-		margin-left: 0px;
-		margin-right: 0px;
+		margin-top: 16px;
 		margin-bottom: 16px;
-		padding-bottom: 0px;
 	}
 
-	/*#introMessage {
-		visibility: hidden;
-		height: 0px;
-	}*/
+	.top {
+		margin-bottom: 16px;
+		margin-top: 16px;
+	}
+
 
 	.hide {
 		visibility: hidden;
@@ -858,7 +875,7 @@ p.researchStatText {
 		padding-left: 16px;
 		max-width: 800px;
 		margin-bottom: 0px;
-		margin-top: 64px;
+		margin-top: -64px;
 		padding-top: 0px;
 		padding-bottom: 0px;
 		/*visibility: hidden;
@@ -878,6 +895,11 @@ p.researchStatText {
 		float: right;
 		padding-right: 48px;
 		font-size: 20px;
+		position: static;
+	}
+
+	#dtResume {
+		position: static;
 	}
 
 	.projectPreview h5 {
@@ -889,10 +911,10 @@ p.researchStatText {
 	}
 
 	.projectPreview h6 {
-		font-size: 10pt;
+		font-size: 14pt;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		padding-top: 8px;
+		padding-top: 12px;
 		padding-bottom: 40px;
 		font-weight: normal;
 
@@ -1001,11 +1023,6 @@ p.researchStatText {
 		justify-content: space-between;
 	}
 
-	.projectPreview {
-		margin-top: 48px;
-		margin-bottom: 48px;
-		/*width: 50%;*/
-	}
 
 	.nextProject {
 		padding-left: 0px;
