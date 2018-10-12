@@ -520,7 +520,7 @@ p.researchStatText {
 	.projectPreview h5 {
 		font-size: 14pt;
 		margin-top: 0px;
-		margin-bottom: 0px;
+		margin-bottom: 8px;
 		padding-top: 24px;
 
 	}
@@ -529,7 +529,7 @@ p.researchStatText {
 		font-size: 14pt;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		padding-top: 12px;
+		padding-top: 24px;
 		padding-bottom: 40px;
 		font-weight: normal;
 
@@ -905,7 +905,7 @@ p.researchStatText {
 	.projectPreview h5 {
 		font-size: 14pt;
 		margin-top: 0px;
-		margin-bottom: 0px;
+		margin-bottom: 8px;
 		padding-top: 24px;
 
 	}
@@ -914,7 +914,7 @@ p.researchStatText {
 		font-size: 14pt;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		padding-top: 12px;
+		padding-top: 24px;
 		padding-bottom: 40px;
 		font-weight: normal;
 
