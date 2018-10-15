@@ -175,7 +175,7 @@ main h3, main h4, main p, #introMessage {
 	width: 100%;
 }
 
-.projectPreview {
+.projectPreview, .projectPreviewNextProject {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.07), 0 -4px 8px 0 rgba(0, 0, 0, 0.02), 0 -6px 20px 0 rgba(0, 0, 0, 0.03);
 	/*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16), 0 -2px 4px 0 rgba(0,0,0,0.16);*/
 	padding-bottom: 24px;
@@ -185,20 +185,20 @@ main h3, main h4, main p, #introMessage {
 }
 
 
-.projectPreview:hover {
+.projectPreview:hover, .projectPreviewNextProject:hover {
 	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.17), 0 10px 24px 0 rgba(0, 0, 0, 0.15), 0 -8px 12px 0 rgba(0, 0, 0, 0.08), 0 -10px 24px 0 rgba(0, 0, 0, 0.10);
 	transform: translateY(-2px);
 	transition: .5s ease;
 }
 
 
-.projectPreview h5, .projectPreview h6 {
+.projectPreview h5, .projectPreview h6, .projectPreviewNextProject h5, .projectPreviewNextProject h6 {
 	padding-left: 24px;
 	padding-right: 24px;
 	text-decoration: none;
 }
 
-.projectPreview h5 {
+.projectPreview h5, .projectPreviewNextProject h5 {
 	font-size: 20pt;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -206,7 +206,7 @@ main h3, main h4, main p, #introMessage {
 
 }
 
-.projectPreview h6 {
+.projectPreview h6, .projectPreviewNextProject h6 {
 	font-size: 16pt;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -457,25 +457,6 @@ p.researchStatText {
 	padding-bottom: 48px;
 }
 
-#OnomatopoeiaIntro {
-	background-color: #FFE845;
-	margin-top: 64px;
-	padding-top: 48px;
-	padding-bottom: 48px;
-}
-
-#OnomatopoeiaIntro h4 {
-	margin-top: 8px;
-	color: black;
-	padding-left: 24px;
-}
-
-#OnomatopoeiaIntro h3 {
-	margin-top: 0px;
-	font-size: 24pt;
-	color: black;
-	padding-left: 24px;
-}
 
 #brainGateCoverImage {
 		margin-top: 0px;
@@ -500,6 +481,63 @@ p.researchStatText {
 .brainMockup {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.07), 0 -4px 8px 0 rgba(0, 0, 0, 0.02), 0 -6px 20px 0 rgba(0, 0, 0, 0.03);
 	margin-bottom: 12px;
+}
+
+#OnomatopoeiaIntro {
+	background-color: #FFE845;
+	margin-top: 64px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+
+#OnomatopoeiaIntro h4 {
+	margin-top: 8px;
+	color: black;
+	padding-left: 24px;
+}
+
+#OnomatopoeiaIntro h3 {
+	margin-top: 0px;
+	font-size: 24pt;
+	color: black;
+	padding-left: 24px;
+}
+
+.OnomatopoeiaImportant {
+	background-color: #FFE845;
+	margin-top: 0px;
+}
+
+.OnomatopoeiaImportant p {
+	margin-top: 0px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.sideBySide {
+	display: flex;
+	flex-direction: row;
+}
+
+.sideBySide img {
+	width: 50%;
+	height: auto;
+	align-self: center
+}
+
+.manyOnomatopoeias {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.manyOnomatopoeias img {
+	width: 40%;
+	height: auto;
+	align-self: center;
+	margin-right: 16px;
+	margin-left: 16px;
 }
 
 
@@ -530,7 +568,7 @@ p.researchStatText {
 	}
 
 
-	.projectPreview h5 {
+	.projectPreview h5, .projectPreviewNextProject h5 {
 		font-size: 14pt;
 		margin-top: 0px;
 		margin-bottom: 8px;
@@ -538,7 +576,7 @@ p.researchStatText {
 
 	}
 
-	.projectPreview h6 {
+	.projectPreview h6, .projectPreviewNextProject h6 {
 		font-size: 14pt;
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -571,6 +609,15 @@ p.researchStatText {
 		padding-bottom: 0px;
 		margin-top: 16px;
 		margin-bottom: 0px;
+	}
+
+	.projectPreviewNextProject {
+		width: 48%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 48px;
+		padding-bottom: 0px;
 	}
 
 	.bottom {
@@ -787,25 +834,6 @@ p.researchStatText {
 	}
 
 
-	#OnomatopoeiaIntro {
-		background-color: #FFE845;
-		margin-top: 40px;
-		padding-top: 128px;
-		padding-bottom: 128px;
-	}
-
-	#OnomatopoeiaIntro h4 {
-		font-size: 24pt;
-		color: black;
-		font-weight: normal;
-	}
-
-	#OnomatopoeiaIntro h3 {
-		font-size: 40pt;
-		color: black;
-		margin-bottom: 40px;
-	}
-
 	#brainGateCoverImage {
 		margin-top: 0px;
 	}
@@ -833,6 +861,72 @@ p.researchStatText {
 		width: 50%;
 		height: auto;
 		align-self: center;
+	}
+
+	#OnomatopoeiaIntro {
+		background-color: #FFE845;
+		margin-top: 40px;
+		padding-top: 128px;
+		padding-bottom: 128px;
+	}
+
+	#OnomatopoeiaIntro h4 {
+		font-size: 24pt;
+		color: black;
+		font-weight: normal;
+	}
+
+	#OnomatopoeiaIntro h3 {
+		font-size: 40pt;
+		color: black;
+		margin-bottom: 40px;
+	}
+
+	.OnomatopoeiaImportant {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+
+	.OnomatopoeiaImportant p, .OnomatopoeiaImportant h4{
+		margin-top: 0px;
+	}
+
+	.OnomatopoeiaImportant p {
+		margin-bottom: 0px;
+	}
+
+	.OnomatopoeiaImportant p strong {
+		font-size: 24pt;
+		margin-top: 0px;
+		padding-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	.sideBySide {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.sideBySide img {
+		width: 50%;
+		height: auto;
+		align-self: center
+	}
+
+	.manyOnomatopoeias {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.manyOnomatopoeias img {
+		width: 15%;
+		height: auto;
+		align-self: center;
+		margin-right: 16px;
+		margin-left: 16px;
 	}
 
 }
@@ -879,6 +973,15 @@ p.researchStatText {
 		margin-right: 0px;
 		margin-top: 0px;
 		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	.projectPreviewNextProject {
+		width: 48%;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 48px;
 		padding-bottom: 0px;
 	}
 
@@ -931,7 +1034,7 @@ p.researchStatText {
 		position: static;
 	}
 
-	.projectPreview h5 {
+	.projectPreview h5, .projectPreviewNextProject h5 {
 		font-size: 14pt;
 		margin-top: 0px;
 		margin-bottom: 8px;
@@ -939,7 +1042,7 @@ p.researchStatText {
 
 	}
 
-	.projectPreview h6 {
+	.projectPreview h6, .projectPreviewNextProject h6 {
 		font-size: 14pt;
 		margin-top: 0px;
 		margin-bottom: 0px;
@@ -1146,6 +1249,22 @@ p.researchStatText {
     	padding-bottom: 128px;
 	}
 
+	#brainGateCoverImage {
+		margin-top: 0px;
+	}
+
+	.brainWirframes {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.brainWirframes img {
+		width: 50%;
+		height: auto;
+		align-self: center;
+	}
+
 	#OnomatopoeiaIntro {
 		background-color: #FFE845;
 		margin-top: 40px;
@@ -1165,21 +1284,54 @@ p.researchStatText {
 		margin-bottom: 40px;
 	}
 
-	#brainGateCoverImage {
+	.OnomatopoeiaImportant {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+
+	.OnomatopoeiaImportant p, .OnomatopoeiaImportant h4{
 		margin-top: 0px;
 	}
 
-	.brainWirframes {
+	.OnomatopoeiaImportant p {
+		margin-bottom: 0px;
+	}
+
+	.OnomatopoeiaImportant p strong {
+		font-size: 24pt;
+		margin-top: 0px;
+		padding-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+
+	.sideBySide {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.sideBySide img {
+		width: 50%;
+		height: auto;
+		align-self: center
+	}
+
+	.manyOnomatopoeias {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: space-around;
 	}
 
-	.brainWirframes img {
-		width: 50%;
+	.manyOnomatopoeias img {
+		width: 15%;
 		height: auto;
 		align-self: center;
+		margin-right: 16px;
+		margin-left: 16px;
 	}
+
+	
 
 
 }
