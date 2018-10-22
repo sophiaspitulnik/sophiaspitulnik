@@ -885,7 +885,7 @@ img.brainMockup {
 	.sideBySide img {
 		width: 50%;
 		height: auto;
-		align-self: center
+		align-self: center;
 	}
 
 	.manyOnomatopoeias {
@@ -1249,7 +1249,7 @@ img.brainMockup {
 	.sideBySide img {
 		width: 50%;
 		height: auto;
-		align-self: center
+		align-self: center;
 	}
 
 	.manyOnomatopoeias {
@@ -1266,8 +1266,6 @@ img.brainMockup {
 		margin-right: 16px;
 		margin-left: 16px;
 	}
-
-	
 
 
 }
