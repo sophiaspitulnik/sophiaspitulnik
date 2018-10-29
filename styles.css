@@ -158,7 +158,7 @@ a {
     overflow: auto;
 }
 
-main h3, main h4, main p, #introMessage, .sectionContent img, .sectionContent video {
+main h3, main h4, main p, #introMessage {
 	padding-left: 24px;
 	padding-right: 24px;
 }
@@ -229,10 +229,6 @@ main h3, main h4, main p, #introMessage, .sectionContent img, .sectionContent vi
 
 
 /*Project Page Specific*/
-
-.section {
-	
-}
 
 #votingTeam, #votingStrategy, #votingIdeation, #votingSocial, #votingPitch, #votingBudget, #brainTeam, #brainIdeation, #brainPrototype, .nextProject, #onomatopoeiasIdeation, #onomatopoeiasReflection, #votingWireframes {
 	background-color: #F5F5F8;
@@ -479,14 +475,18 @@ p.researchStatText {
 }
 
 #problemImages {
-	padding-left: 24px;
-	padding-right: 24px;
 	padding-top: 12px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
 }
 
 #problemImages img {
 	margin-bottom: 12px;
-	padding: 0px;
+	padding: 4px;
+	width: 30%;
+	align-self: center;
 }
 
 #ideationImage {
@@ -499,8 +499,34 @@ p.researchStatText {
 	flex-wrap: wrap;
 }
 
+.twoColumns {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.twoColumns img, .twoColumns p {
+	align-self: center;
+}
+
+.votingUserFlow {
+	width: 50%; 
+	padding-bottom: 0px; 
+	padding-top: 0px;
+}
+
+.votingMockup {
+	width: 100%; 
+	padding-bottom: 0px; 
+	padding-top: 0px;
+}
+
+#howToVoteFirstImage {
+	float: right;
+	overflow: auto;
+}
+
 #personaSideBySide img, #personaSideBySide p {
-	width: 44%;
 	align-self: center;
 }
 
@@ -822,6 +848,27 @@ img.brainMockup {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+
+	#personaSideBySide img, #personaSideBySide p {
+		align-self: center;
+		width: 40%;
+	}
+
+	.twoColumns {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.twoColumns img, .twoColumns p {
+		width: 44%;
+		align-self: center;
+	}
+		
+
+	.votingMockup {
+		width: 50%;
 	}
 
 	#researchStatistics {
@@ -1176,6 +1223,28 @@ img.brainMockup {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+	}
+
+	#personaSideBySide img, #personaSideBySide p {
+		align-self: center;
+		width: 40%;
+	}
+
+	.twoColumns {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.twoColumns img, .twoColumns p {
+		width: 40%;
+		align-self: center;
+	}
+
+	
+
+	.votingMockup {
+		width: 40%;
 	}
 
 	#problemImages img {

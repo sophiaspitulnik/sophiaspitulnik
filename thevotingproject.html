@@ -176,7 +176,7 @@
 				<div class="section">
 					<h3 class="column">Users</h3>
 					<div class="sectionContent">
-						<p class="column basicText">Our client asked us specifically to reach Generation Z, but as there are 67 million Americans who are considered part of generation Z and much variation in this group, we decided to focus in on reaching a specific demographic with in Generation Z.</p>
+						<p class="column basicText"><span>Generation Z:</span> Our client asked us specifically to reach Generation Z, but as there are 67 million Americans who are considered part of generation Z and much variation in this group, we decided to focus in on reaching a specific demographic with in Generation Z.</p>
 					</div>
 				</div>
 				<div class="fullImageContainer">	
@@ -210,7 +210,7 @@
 
 
 			<!-- website user flows -->
-			<div id="votingFlow">
+			<!-- <div id="votingFlow">
 				<div class="section">
 					<h3>User Flows</h3>
 					<div class="sectionContent">
@@ -220,7 +220,7 @@
 						<img src="images/TheVotingProjectAssets/theVotingProjectHowToVoteUserFlow.jpg" alt="How to vote user flow" class="firstImage">
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 
 
@@ -229,6 +229,7 @@
 				<div class="section">
 					<h3>Wireframes</h3>
 					<div class="sectionContent">
+						<p class="basicText">I made many iterations of different possible layouts for each page. One challenge that I encountered was the process for a user to select their state in mobile. I wanted this process to be engaging and visual so I decided to show a map of the United States where the user could click to select their state. However, the full map of the united states would be too small to fit on mobile. I solved this problem by first asking the user to select their region and then asking the user to select their state (see below in the website section).</p>
 					</div>
 				</div>
 				<div class="fullImageContainer">
@@ -248,36 +249,40 @@
 				</div>
 				<div class="fullImageContainer">
 					<img src="images/TheVotingProjectAssets/theVotingProjectLandingPageMockup.jpg" alt="The voting project landing page" class="firstImage">
-					<div id="personaSideBySide">
+					<div class="twoColumns" style="
+								justify-content: flex-end;
+  								align-items: flex-end;
+  								align-content: flex-end;">
 						<p class="column basicText""><span>How to Vote:</span> This is a user flow for a user who wants more information on how to vote. The user most associates with Massachusetts, is registered to vote and is interested in learning more about voting by mail.</p>
-						<img src="images/TheVotingProjectAssets/landingPageMobile.jpg" alt="The voting project landing page" class="firstImage" style="width: 50%; padding-bottom: 0px;" align="right" >
+						<img src="images/TheVotingProjectAssets/landingPageMobile.jpg" alt="The voting project landing page" id="howToVoteFirstImage" class="firstImage votingUserFlow">
 						<div style="display: flex;
 								flex-direction: row;
 								flex-wrap: wrap;
 								height: 100%;
 								width: 100%;
-  								justify-content: flex-start;
+  								justify-content: flex-end;
   								align-items: flex-end;
+  								align-content: flex-end;
   								margin-top: 24px">
-							<img src="images/TheVotingProjectAssets/registeredMockup.jpg" alt="Register to vote" style="width: 50%; padding-bottom: 0px; padding-top: 0px;">
-							<img src="images/TheVotingProjectAssets/selectStateMockup.gif" alt="Select a state" style="width: 50%; padding-bottom: 0px; padding-top: 0px;">
-							<img src="images/TheVotingProjectAssets/votingOptionsMockup.jpg" alt="Voting Options in your state" style="width: 50%; padding-bottom: 0px; padding-top: 0px;">
-							<img src="images/TheVotingProjectAssets/voteByMailMockup.gif" alt="vote by mail information" style="width: 50%; padding-bottom: 0px; padding-top: 0px;">
+							<img src="images/TheVotingProjectAssets/registeredMockup.jpg" alt="Register to vote" class="votingUserFlow">
+							<img src="images/TheVotingProjectAssets/selectStateMockup2.gif" alt="Select a state" class="votingUserFlow">
+							<img src="images/TheVotingProjectAssets/votingOptionsMockup.jpg" alt="Voting Options in your state" class="votingUserFlow">
+							<img src="images/TheVotingProjectAssets/voteByMailMockup2.gif" alt="vote by mail information" class="votingUserFlow">
 						</div>
 					</div>
-					<div id="personaSideBySide" style="margin-top: 96px">
-						<p class="column basicText""><span>Issues and Candidates</span> Here the users can see which issues and candidates are up for election in the near future in their state. They can change their state at any time, as some voters might be unsure of what state to register to vote in.</p>
-						<img src="images/TheVotingProjectAssets/issuesCandidatesMockup.gif" alt="Issues and Candidates" style="width: 50%; padding-bottom: 0px; padding-top: 0px;">
+					<div class="twoColumns" style="margin-top: 24px">
+						<img src="images/TheVotingProjectAssets/issuesAndCand.gif" alt="Issues and Candidates" class="votingMockup">
+						<p class="column basicText""><span>Issues and Candidates:</span> Here the users can see which issues and candidates are up for election in the near future in their state. They can change their state at any time, as some voters might be unsure of what state to register to vote in.</p>
 					</div>
-					<div id="personaSideBySide" style="margin-top: 96px">
-						<img src="images/TheVotingProjectAssets/" alt="Upcoming Elections" style="width: 50%; padding-bottom: 0px; padding-top: 0px;">
-						<p class="column basicText""><span>Upcoming Elections</span> In this section, the user can read about each of the upcoming elections in their state or region. Each of the measures, bills or candidates that are up for vote are listed under the election date.</p>
+					<div class="twoColumns" style="margin-top: 96px">
+						<p class="column basicText"><span>Upcoming Elections:</span> In this section, the user can read about each of the upcoming elections in their state or region. Each of the measures, bills or candidates that are up for vote are listed under the election date.</p>
+						<img src="images/TheVotingProjectAssets/upcomingElections.jpg" alt="Upcoming Elections" class="votingMockup">
 					</div>
-					<div id="personaSideBySide" style="margin-top: 96px">
-						<p class="column basicText""><span>Issues and Candidates</span> Here the users can see which issues and candidates are up for election in the near future in their state. They can change their state at any time, as some voters might be unsure of what state to register to vote in.</p>
-						<p></p>
-						<img src="images/TheVotingProjectAssets/theVotingProjectFAQMockup2.jpg" alt="FAQ Search">
-						<img src="images/TheVotingProjectAssets/theVotingProjectFAQMockup1.jpg" alt="FAQ submit a new question">
+					<div class="twoColumns" style="margin-top: 96px">
+						<img src="images/TheVotingProjectAssets/faqSearch.jpg" alt="FAQ submit a new question" class="votingMockup">
+						<p class="column basicText""><span>FAQ:</span> The users can scroll through frequently asked questions, search for a question or submit a question that has not been answered yet. </p>
+						
+						
 					</div>
 				</div>
 			</div>
@@ -289,7 +294,7 @@
 				<div class="section">
 					<h3 class="column">Social Campaign</h3>
 					<div class="sectionContent">
-						<p class="column basicText">In addition to the website, our campaign includes an educational youtube channel where Taylor and Taylor can learn how to vote as well as, research on different measures and candidates that are coming up for vote.</p>
+						<p class="column basicText"><span>Youtube:</span> Our campaign includes an educational youtube channe where Taylor and Taylor can learn how to vote as well as, research on different measures and candidates that are coming up for vote.</p>
 					</div>
 				</div>
 				<div class="fullImageContainer">
@@ -312,7 +317,7 @@
 				<div class="section">
 					<h3 style="border-top: none;"></h3>
 					<div class="sectionContent">
-						<p class="column basicText">In addition to a Youtube channel, our social media campaign also includes an Instagram page, Facebook page, sponsored Instagram ads, partnerships with popular influencers, blurbs in university newsletters and partnerships with college campus ambassadors (who were also a part of the previous campaign).</p>
+						<p class="column basicText"><span>Facebook and Instagram:</span> Our social media campaign also includes an Instagram page, Facebook page, sponsored Instagram ads, partnerships with popular influencers, blurbs in university newsletters and partnerships with college campus ambassadors (who were also a part of the previous campaign).</p>
 						<img src="images/TheVotingProjectAssets/theVotingProjectSocialMedia1.png" alt="Social Media" class="firstImage">
 						<img src="images/TheVotingProjectAssets/theVotingProjectSocialMedia2.png" alt="Social Media">
 						<img src="images/TheVotingProjectAssets/theVotingProjectSocialMedia3.png" alt="Emails" class="column">
@@ -326,9 +331,9 @@
 			<!-- Transportation Partnerships -->
 			<div id="votingTransportation">
 				<div class="section">
-					<h3 class="column">Transportation Partnerships</h3>
+					<h3 class="column">Transportation</h3>
 					<div class="sectionContent">
-						<p class="column basicText">Our campaign also includes partnerships with companies that provide transportation. In these partnership, The Voting Project will pay the transportation companies for the cost of all transportation on election day to the election polls and the companies will provide free transportation to election polls. The companies will also use their social media and other advertising channels to promote The Voting Project’s resources. This will be good for these companies corporate social responsibility.</p>
+						<p class="column basicText"><span>Partnerships:</span> The Voting Project will partner with transportation companies to pay for the cost of all transportation on election day to the polls. The companies will also use their social media and other advertising channels to promote The Voting Project’s resources. This will be good for these companies corporate social responsibility.</p>
 						<img src="images/TheVotingProjectAssets/theVotingProjectSocialCampaign1.png" alt="Transportation Partnerships" class="firstImage">
 						<img src="images/TheVotingProjectAssets/theVotingProjectSocialCampaign2.png" alt="Transportation Partnerships">
 					</div>
@@ -340,9 +345,9 @@
 			<!-- Pitch Deck -->
 			<div id="votingPitch">
 				<div class="section">
-					<h3 class="column">Pitch Deck</h3>
+					<h3 class="column">The Pitch</h3>
 					<div class="sectionContent">
-						<p class="column basicText">At the end of this project, my team (along with the 4 other case study teams) had the opportunity to pitch to the client and some of the senior Digitas employees. Out of the 5 presentations, my group was selected as the winner!</p>
+						<p class="column basicText">At the end of this project, my team had the opportunity to pitch our work to a panel of senior Digitas executives and the client.</p>
 						<p class="basicText column"><a href="images/TheVotingProjectAssets/theVotingProjectPitchDeck.pdf" target="_blank" class="link">See a PDF of our pitch deck here.</a></p>
 					</div>
 				</div>
@@ -355,7 +360,7 @@
 				<div class="section">
 					<h3 class="column">Visual Language</h3>
 					<div class="sectionContent">
-						<p class="column basicText">I used a simple, bold graphic language to make the content easily digestible and to reassure the user. I used some of the brand language from the pro bono client, but I cut down on the number of illustration styles, typefaces and colors. I made these decisions to create more consistency and to better reflect the brand voice that the client wished to achieve. The content and visual language is friendly and enthusiastic, encouraging and patriotic, but not polarizing. I also created a UI style for the website.</p>
+						<p class="column basicText"><span>Colors, Type, and UI:</span> I used a simple, bold graphic language to make the content easily digestible and to reassure the user. I used some of the brand language from the pro bono client, but I cut down on the number of illustration styles, typefaces and colors. I made these decisions to create more consistency and to better reflect the brand voice that the client wished to achieve. The content and visual language is friendly and enthusiastic, encouraging and patriotic, but not polarizing. I also created a UI style for the website.</p>
 						<div class="imageFit column"><img src="images/TheVotingProjectAssets/theVotingProjectVisualLanguage.png" alt="Visual language"></div>
 					</div>
 				</div>
@@ -366,8 +371,9 @@
 			<!-- Budget and Media Distribution -->
 			<div id="votingBudget">
 				<div class="section">
-					<h3 class="column">Budget and Media Distribution</h3>
+					<h3 class="column">Budget</h3>
 					<div class="sectionContent">
+						<p class="basicText">The client asked us to develop two media plans: one plan within a $50,000 budget and the other for an “unlimited” budget.</p>
 						<img src="images/TheVotingProjectAssets/theVotingProjectBudget.png" alt="Budget" class="basicText">
 					</div>
 				</div>
