@@ -230,13 +230,13 @@ main h3, main h4, main p, #introMessage {
 
 /*Project Page Specific*/
 
-#votingTeam, #votingStrategy, #votingIdeation, #votingSocial, #votingPitch, #votingBudget, #brainTeam, #brainIdeation, #brainPrototype, .nextProject, #onomatopoeiasIdeation, #onomatopoeiasReflection, #votingWireframes {
+#votingTeam, #votingStrategy, #votingIdeation, #votingSocial, #votingPitch, #votingBudget, #brainTeam, #brainIdeation, #brainPrototype, .nextProject, #onomatopoeiasIdeation, #onomatopoeiasReflection, #votingWireframes, #linkedinResearch, #linkedinProblem, #linkedinBrainstorm, #linkedinFeedback, #linkedinNext {
 	background-color: #F5F5F8;
 	padding-top: 24px;
 	padding-bottom: 96px;
 }
 
-#votingBackground, #votingResearch, #votingUsers, #votingWebsite, #votingTransportation, #votingVisual, #votingConclusion, #brainBackground, #brainUsers, #brainMockups, #brainReflection, #onomatopoeiasBackground, #onomatopoeiasResearch, #onomatopoeiasGIFs, #votingFlow {
+#votingBackground, #votingResearch, #votingUsers, #votingWebsite, #votingTransportation, #votingVisual, #votingConclusion, #brainBackground, #brainUsers, #brainMockups, #brainReflection, #onomatopoeiasBackground, #onomatopoeiasResearch, #onomatopoeiasGIFs, #votingFlow, #linkedinBackground, #linkedinPersona, #linkedinGoals, #linkedinWireframes, #linkedinMockups {
 	padding-top: 24px;
 	padding-bottom: 96px;
 }
@@ -315,6 +315,11 @@ main h3, main h4, main p, #introMessage {
 .basicText {
 	font-size: 16pt;
 	padding-bottom: 24pt;
+	color: #9196A4;
+}
+
+li {
+	font-size: 16pt;
 	color: #9196A4;
 }
 
@@ -582,12 +587,12 @@ img.brainMockup {
 
 	/*General Project page*/
 
-	#votingTeam, #votingStrategy, #votingIdeation, #votingSocial, #votingPitch, #votingBudget, #brainTeam, #brainIdeation, #brainTeam, #brainIdeation, #brainPrototype, .nextProject, #onomatopoeiasIdeation, #onomatopoeiasReflection, #votingWireframes {
+	#votingTeam, #votingStrategy, #votingIdeation, #votingSocial, #votingPitch, #votingBudget, #brainTeam, #brainIdeation, #brainTeam, #brainIdeation, #brainPrototype, .nextProject, #onomatopoeiasIdeation, #onomatopoeiasReflection, #votingWireframes, #linkedinResearch, #linkedinProblem, #linkedinBrainstorm, #linkedinFeedback, #linkedinNext {
 		padding-top: 96px;
 		padding-bottom: 96px;
 	}
 
-	#brainOProblem, #brainNProblem, #votingProblem, #votingBackground, #votingResearch, #votingUsers, #votingWebsite, #votingTransportation, #votingVisual, #votingConclusion, #brainBackground, #brainUsers, #brainMockups, #brainReflection, #onomatopoeiasBackground, #onomatopoeiasResearch, #onomatopoeiasGIFs, #onomatopoeiasFProblem, #onomatopoeiasSProblem, #votingFlow {
+	#brainOProblem, #brainNProblem, #votingProblem, #votingBackground, #votingResearch, #votingUsers, #votingWebsite, #votingTransportation, #votingVisual, #votingConclusion, #brainBackground, #brainUsers, #brainMockups, #brainReflection, #onomatopoeiasBackground, #onomatopoeiasResearch, #onomatopoeiasGIFs, #onomatopoeiasFProblem, #onomatopoeiasSProblem, #votingFlow, #linkedinBackground, #linkedinPersona, #linkedinGoals, #linkedinWireframes, #linkedinMockups {
 		padding-top: 96px;
 		padding-bottom: 96px;
 	}
@@ -681,6 +686,11 @@ img.brainMockup {
 		line-height: 1.7;
 		padding-bottom: 0px;
 
+	}
+
+	li {
+		font-size: 13pt;
+		line-height: 1.7;
 	}
 
 	.fullImageContainer {
@@ -956,13 +966,13 @@ img.brainMockup {
 @media (min-width: 768px) and (max-width: 1000px) {
 	
 	
-	#votingTeam, #votingStrategy, #votingIdeation, #votingSocial, #votingPitch, #votingBudget, #brainTeam, #brainIdeation, .nextProject, #onomatopoeiasIdeation, #onomatopoeiasReflection, #votingWireframes {
+	#votingTeam, #votingStrategy, #votingIdeation, #votingSocial, #votingPitch, #votingBudget, #brainTeam, #brainIdeation, .nextProject, #onomatopoeiasIdeation, #onomatopoeiasReflection, #votingWireframes, #linkedinResearch, #linkedinProblem, #linkedinBrainstorm, #linkedinFeedback, #linkedinNext {
 		background-color: #f4f4f4;
 		padding-top: 96px;
 		padding-bottom: 96px;
 	}
 
-	#votingProblem, #votingBackground, #votingResearch, #votingUsers, #votingWebsite, #votingTransportation, #votingVisual, #votingConclusion, #brainBackground, #brainUsers, #brainMockups, #brainReflection, #onomatopoeiasBackground, #onomatopoeiasResearch, #onomatopoeiasGIFs, #onomatopoeiasFProblem, #onomatopoeiasSProblem, #votingFlow {
+	#votingProblem, #votingBackground, #votingResearch, #votingUsers, #votingWebsite, #votingTransportation, #votingVisual, #votingConclusion, #brainBackground, #brainUsers, #brainMockups, #brainReflection, #onomatopoeiasBackground, #onomatopoeiasResearch, #onomatopoeiasGIFs, #onomatopoeiasFProblem, #onomatopoeiasSProblem, #votingFlow, #linkedinBackground, #linkedinPersona, #linkedinGoals, #linkedinWireframes, #linkedinMockups {
 		padding-top: 96px;
 		padding-bottom: 96px;
 	}
@@ -1053,6 +1063,11 @@ img.brainMockup {
 		font-size: 13pt;
 		line-height: 1.8;
 		padding-bottom: 0px;
+	}
+
+	li {
+		font-size: 13pt;
+		line-height: 1.7;
 	}
 
 
