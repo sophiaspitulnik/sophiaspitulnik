@@ -168,7 +168,7 @@ main h3, main h4, main p, #introMessage {
 	padding-bottom: 32px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	
+	/*background-color: #F5F5F8;*/
 
 }
 
@@ -824,8 +824,8 @@ img.brainMockup {
 		padding-left: 16px;
 		max-width: 800px;
 		margin-bottom: 0px;
-		margin-top: -64px;
-		padding-top: 0px;
+		margin-top: 0px;
+		padding-top: 150px;
 		padding-bottom: 0px;
 	}
 
