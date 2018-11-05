@@ -590,6 +590,11 @@ img.linkedInWireframe {
 	margin-top: 24px;
 }
 
+video.userFlowVideo {
+	height: 80vh;
+	width: auto;
+}
+
 
 
 @media (min-width: 1000px) {
@@ -634,11 +639,12 @@ img.linkedInWireframe {
 	.intro h1 {
 		font-size: 20pt;
 		line-height: 1.2;
-		width: 1000px;
+		max-width: 1000px;
 		margin-right: auto;
 		margin-left: auto;
 		margin-bottom: 24px;
 		font-weight: normal;
+		padding-right: 0px;
 	}
 
 	.intro h2 {
@@ -973,6 +979,11 @@ img.linkedInWireframe {
 	/*LinkedIn Specific*/
 	img.linkedInWireframe {
 		width: 30%;
+	}
+
+	video.userFlowVideo {
+		height: 80vh;
+		width: auto;
 	}
 
 
@@ -1372,6 +1383,10 @@ img.linkedInWireframe {
 		width: 30%;
 	}
 
+	video.userFlowVideo {
+		height: 80vh;
+		width: auto;
+	}
 
 
 }
