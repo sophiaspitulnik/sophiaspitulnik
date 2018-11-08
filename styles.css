@@ -208,12 +208,12 @@ main h3, main h4, main p, #introMessage {
 	padding-bottom: 32px;
 	margin-top: 0px;
 	margin-bottom: 0px;
+	margin-left: 5vw;
+	margin-right: 5vw;
 	background-color: #F5F5F8; 
 	position: fixed; 
 	z-index: 0; 
 	top: 0;
-	/*background-color: #F5F5F8;*/
-
 }
 
 #introMessage h2 {
@@ -225,7 +225,7 @@ main h3, main h4, main p, #introMessage {
 	z-index: 51; 
 	background-color: white; 
 	position: relative; 
-	margin-top: 600px;
+	margin-top: 90vh;
 }
 
 #introParagraph {
@@ -493,6 +493,15 @@ hr.highLevelCategory {
 	text-decoration: underline;
 	font-size: 12px;
 	font-weight: bold;
+}
+
+.navigation {
+	float: left;
+}
+
+#navigationGroup {
+	margin-left: -48px;
+	margin-top: 16px;
 }
 
 :target {
@@ -865,8 +874,9 @@ video.userFlowVideo {
 		padding-top: 0px;
 		flex-wrap: wrap;
 		max-width: 100%;
-		margin-top: 85vh;
+		margin-top: 80vh;
 		padding-top: 48px;
+		margin-top: 600px;
 	}
 
 	.projectPreview {
@@ -957,6 +967,22 @@ video.userFlowVideo {
 		top: 0;
 		background-color: white;
 	}
+
+	#name {
+		float: left;
+		/*display: inline;
+		width: 50%;*/
+	}
+
+	.navigation {
+		display: inline; 
+		float: right;
+	}
+
+	#navigationGroup {
+	margin-left: 0px;
+	margin-top: 0px;
+}
 
 	#dtResume {
 		position: static;
@@ -1210,8 +1236,9 @@ video.userFlowVideo {
 		padding-top: 0px;
 		flex-wrap: wrap;
 		max-width: 100%;
-		margin-top: 85vh;
+		margin-top: 80vh;
 		padding-top: 48px;
+		margin-top: 600px;
 	}
 
 
@@ -1303,6 +1330,21 @@ video.userFlowVideo {
 		background-color: white;
 	}
 
+	#name {
+		float: left;
+		/*display: inline;
+		width: 50%;*/
+	}
+
+	.navigation {
+		display: inline; 
+		float: right;
+	}
+
+	#navigationGroup {
+		margin-left: 0px;
+		margin-top: 0px;
+	}
 
 
 	.nav {
