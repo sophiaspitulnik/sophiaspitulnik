@@ -208,12 +208,12 @@ main h3, main h4, main p, #introMessage {
 	padding-bottom: 32px;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	margin-left: 5vw;
-	margin-right: 5vw;
 	background-color: #F5F5F8; 
 	position: fixed; 
 	z-index: 0; 
 	top: 0;
+	margin-right: 24px;
+	margin-left: 24px;
 }
 
 #introMessage h2 {
