@@ -52,14 +52,13 @@ video.column {
 	margin-bottom: 24px;
 }
 
-/*#comingSoon {
-	position: relative;
+.hideMobile {
+	display: none;
 }
 
-#comingSoon:hover .overlay {
-	opacity: 1;
-
-}*/
+.hideDesktop {
+	display: inline;
+}
 
 #comingSoonMobil {
 	position: relative;
@@ -148,11 +147,11 @@ a {
 
 .landingPageNav {
 	display: block; 
-	width: 90%;
-	padding-top: 16px;
+	width: 95%;
+	padding-top: 24px;
 	padding-bottom: 16px;
-	padding-left: 5vw;
-	padding-right: 5vw;
+	padding-left: 16px;
+	padding-right: 16px;
 	position: static; 
 	z-index: 110; 
 	top: 0;
@@ -163,7 +162,7 @@ a {
 	display: block; 
 	width: 90%;
 	padding-top: 24px; 
-	padding-bottom: 20px;
+	padding-bottom: 8px;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	position: fixed; 
@@ -181,6 +180,7 @@ a {
 	font-weight: bold;
 	color: #9196A4;
 	margin: 0px;
+	line-height: 1;
 
 }
 
@@ -189,20 +189,25 @@ a {
 	font-weight: bold;
 	color: #9196A4;
 	margin: 0px;
-	margin-left: 16px;
-	margin-right: 16px;
+	margin-left: 12px;
+	margin-right: 12px;
 	line-height: 1;
 	display: inline-block;
+	line-height: 1.3;
 }
+
+#navigationGroup h1 {
+	margin-right: 72px;
+	line-height: 1.3;
+}
+
 
 .landingPageNav h3:hover {
 	color: #FFE845;
 }
 
 #name {
-	text-align: center;
-  	display:flex;
-  	justify-content:center;
+
 }
 
 #name h1:hover {
@@ -223,8 +228,8 @@ a {
 }
 
 main h3, main h4, main p, #introMessage {
-	padding-left: 24px;
-	padding-right: 24px;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 #introMessage, #about {
@@ -237,12 +242,15 @@ main h3, main h4, main p, #introMessage {
 }
 
 #introMessage {
-	padding-top: 8px;
+	padding-top: 80px;
+	padding-bottom: 40px;
 }
 
 #introMessage h2 {
-	font-size: 36pt;
+	font-size: 28pt;
 	line-height: 1.3;
+	margin-top: 0px;
+	margin-bottom: 8px;
 }
 
 #about {
@@ -291,8 +299,8 @@ main h3, main h4, main p, #introMessage {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.04), 0 6px 20px 0 rgba(0, 0, 0, 0.03), 0 -4px 8px 0 rgba(0, 0, 0, 0.02), 0 -6px 20px 0 rgba(0, 0, 0, 0.03);
 	padding-bottom: 24px;
 	margin-bottom: 24px;
-	margin-right: 24px;
-	margin-left: 24px;
+	margin-right: 16px;
+	margin-left: 16px;
 	background-color: white;
 }
 
@@ -309,8 +317,8 @@ main h3, main h4, main p, #introMessage {
 
 
 .projectPreview h5, .projectPreview h6, .projectPreviewNextProject h5, .projectPreviewNextProject h6 {
-	padding-left: 48px;
-	padding-right: 48px;
+	padding-left: 24px;
+	padding-right: 24px;
 	text-decoration: none;
 }
 
@@ -318,7 +326,7 @@ main h3, main h4, main p, #introMessage {
 	font-size: 20pt;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-top: 48px;
+	padding-top: 24px;
 
 }
 
@@ -392,7 +400,7 @@ main h3, main h4, main p, #introMessage {
 
 
 .intro {
-	margin-top: 184px;
+	margin-top: 120px;
 	width: 100%;
 }
 
@@ -407,20 +415,20 @@ main h3, main h4, main p, #introMessage {
 }
 
 .intro h2 {
-	font-size: 48px;
+	font-size: 40px;
 	margin-top: 0px;
 	line-height: 1.2;
 	padding-left: 24px;
-	margin-bottom: 24px;
-	margin-bottom: 144px;
+	margin-bottom: 80px;
 }
 
 
 
 .basicText {
-	font-size: 16pt;
+	font-size: 14pt;
 	padding-bottom: 24pt;
 	color: #9196A4;
+	line-height: 1.4;
 }
 
 li {
@@ -553,16 +561,18 @@ hr.highLevelCategory {
 }
 
 .navigation {
-	float: center;
-	text-align: center;
+	float: left;
+	text-align: left;
 }
 
 #navigationGroup {
 	margin-left: 0px;
-	margin-top: 16px;
-	text-align: center;
-  	display:flex;
-  	justify-content:center;
+	margin-top: 0px;
+	text-align: left;
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: flex-end;
+
 }
 
 :target {
@@ -751,6 +761,19 @@ video.userFlowVideo {
 	}
 	
 
+	main h3, main h4, main p, #introMessage {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.hideMobile {
+		display: inline;
+	}
+
+	.hideDesktop {
+		visibility: hidden;
+	}
+
 	.intro {
 		margin-top: 184px;
 		margin-left: 120px;
@@ -914,6 +937,12 @@ video.userFlowVideo {
 
 	}
 
+	.projectPreview h5, .projectPreview h6, .projectPreviewNextProject h5, .projectPreviewNextProject h6 {
+		padding-left: 48px;
+		padding-right: 48px;
+		text-decoration: none;
+	}
+
 	.hide {
 		visibility: hidden;
 	}
@@ -983,8 +1012,8 @@ video.userFlowVideo {
 		margin-left: 5vw;
 		margin-right: 5vw;
 		margin-bottom: 0px;
-		margin-top: 88px;
-		padding-top: 104px;
+		margin-top: 24px;
+    	padding-top: 144px;
 		padding-right: 104px;
 		padding-left: 104px;
 		padding-bottom: 0px;
@@ -1049,15 +1078,15 @@ video.userFlowVideo {
 	}
 
 	.landingPageNav {
-		display: block; 
-		width: 90%;
-		padding-top: 40px;
-		padding-bottom: 26px;
-		padding-left: 5vw;
-		padding-right: 5vw;
-		position: fixed; 
-		z-index: 110; 
-		top: 0;
+	    display: block;
+	    width: 90%;
+	    padding-top: 40px;
+	    padding-bottom: 0px;
+	    padding-left: 5vw;
+	    padding-right: 5vw;
+	    position: fixed;
+	    z-index: 110;
+	    top: 0;
 	}
 
 	.projectPageNav {
@@ -1074,7 +1103,7 @@ video.userFlowVideo {
 		height: 24px; 	
 	}
 
-	.landingPageNav h3, .projectPageNav h3 {
+	.landingPageNav h3, .projectPageNav h3, #navigationGroup h1 {
 		font-size: 12pt;
 		font-weight: bold;
 		color: #9196A4;
@@ -1082,10 +1111,14 @@ video.userFlowVideo {
 		margin-left: 48px;
 		line-height: 1;
 		display: inline-block;
+		align-items: flex-end;
+		line-height: 1;
 	}
 
 	#name {
 		float: left;
+		align-items: flex-end;
+		line-height: 1;
 	}
 
 	.navigation {
@@ -1093,13 +1126,14 @@ video.userFlowVideo {
 		float: right;
 	}
 
+
 	#navigationGroup {
 		margin-left: 0px;
-		margin-top: 0px;
-		margin-top: 16px;
-		text-align: right;
-  		display:inline;
-  		justify-content:right;
+	    margin-top: 0px;
+	    margin-top: 16px;
+	    text-align: right;
+	    display: inline;
+	    justify-content: right;
 	}
 
 
@@ -1255,6 +1289,20 @@ video.userFlowVideo {
 		border-top: 2px solid white;
 	}
 
+	main h3, main h4, main p, #introMessage {
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.hideMobile {
+		display: inline;
+	}
+
+	.hideDesktop {
+		display: none;
+		visibility: hidden;
+	}
+
 	.intro {
 		margin-top: 184px;
 		width: 100%;
@@ -1400,8 +1448,8 @@ video.userFlowVideo {
 		margin-left: 5vw;
 		margin-right: 5vw;
 		margin-bottom: 0px;
-		margin-top: 88px;
-		padding-top: 104px;
+		margin-top: 24px;
+		padding-top: 128px;
 		padding-right: 104px;
 		padding-left: 104px;
 		padding-bottom: 0px;
@@ -1450,8 +1498,8 @@ video.userFlowVideo {
 	.landingPageNav {
 		display: block; 
 		width: 90%;
-		padding-top: 40px;
-		padding-bottom: 26px;
+		padding-top: 32px;
+		padding-bottom: 0px;
 		padding-left: 5vw;
 		padding-right: 5vw;
 		position: fixed; 
@@ -1473,7 +1521,7 @@ video.userFlowVideo {
 		height: 24px; 	
 	}
 
-	.landingPageNav h3, .projectPageNav h3 {
+	.landingPageNav h3, .projectPageNav h3, #navigationGroup h1 {
 		font-size: 12pt;
 		font-weight: bold;
 		color: #9196A4;
@@ -1499,6 +1547,8 @@ video.userFlowVideo {
 		text-align: right;
   		display:inline;
   		justify-content:right;
+  		align-items: center;
+  		top: 0;
 	}
 
 
@@ -1527,6 +1577,12 @@ video.userFlowVideo {
 		margin-bottom: 8px;
 		padding-top: 48px;
 
+	}
+
+	.projectPreview h5, .projectPreview h6, .projectPreviewNextProject h5, .projectPreviewNextProject h6 {
+		padding-left: 48px;
+		padding-right: 48px;
+		text-decoration: none;
 	}
 
 	.projectPreview h6, .projectPreviewNextProject h6 {
