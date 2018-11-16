@@ -283,6 +283,34 @@ main h3, main h4, main p, #introMessage {
 	background-color: white; 
 }
 
+.tags {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 24px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.tag {
+	background: #F1F1F2;
+	border-radius: 100px;
+	padding-top: 20px;
+	padding-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-right: 4px;
+	margin-left: 4px;
+	margin-top: 8px;
+}
+
+.tag .basicText {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12pt;
+	line-height: 0;
+}
+
 #introParagraph {
 		font-size: 16pt; 
 		margin-left: 0vw; 
@@ -940,14 +968,14 @@ video.userFlowVideo {
 	.projectPreview h5, .projectPreviewNextProject h5 {
 		font-size: 14pt;
 		margin-top: 0px;
-		margin-bottom: 8px;
-		padding-top: 48px;
+		margin-bottom: 12px;
+		padding-top: 24px;
 
 	}
 
 	.projectPreview h5, .projectPreview h6, .projectPreviewNextProject h5, .projectPreviewNextProject h6 {
-		padding-left: 48px;
-		padding-right: 48px;
+		padding-left: 32px;
+		padding-right: 32px;
 		text-decoration: none;
 	}
 
@@ -960,7 +988,7 @@ video.userFlowVideo {
 		margin-top: 0px;
 		margin-bottom: 0px;
 		padding-top: 0px;
-		padding-bottom: 40px;
+		padding-bottom: 24px;
 		font-weight: normal;
 
 	}
@@ -1589,14 +1617,14 @@ video.userFlowVideo {
 	.projectPreview h5, .projectPreviewNextProject h5 {
 		font-size: 14pt;
 		margin-top: 0px;
-		margin-bottom: 8px;
-		padding-top: 48px;
+		margin-bottom: 12px;
+		padding-top: 24px;
 
 	}
 
 	.projectPreview h5, .projectPreview h6, .projectPreviewNextProject h5, .projectPreviewNextProject h6 {
-		padding-left: 48px;
-		padding-right: 48px;
+		padding-left: 32px;
+		padding-right: 32px;
 		text-decoration: none;
 	}
 
@@ -1605,7 +1633,7 @@ video.userFlowVideo {
 		margin-top: 0px;
 		margin-bottom: 0px;
 		padding-top: 0px;
-		padding-bottom: 40px;
+		padding-bottom: 24px;
 		font-weight: normal;
 
 	}
