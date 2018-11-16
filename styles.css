@@ -378,7 +378,7 @@ main h3, main h4, main p, #introMessage {
 }
 
 #votingProblem p strong, #votingStrategy p strong, #brainOProblem p strong, #brainNProblem p strong, #onomatopoeiasResearch p strong {
-	font-size: 24pt;
+	font-size: 18pt;
 	line-height: 1.4;
 }
 
@@ -426,7 +426,7 @@ main h3, main h4, main p, #introMessage {
 
 .basicText {
 	font-size: 14pt;
-	padding-bottom: 24pt;
+	padding-bottom: 8pt;
 	color: #9196A4;
 	line-height: 1.4;
 }
@@ -448,6 +448,7 @@ li {
 .projectPageContent h3 {
 	font-size: 36pt;
 	margin-bottom: 0px;
+	line-height: 1.2;
 }
 
 .projectPageContent hr {
@@ -484,7 +485,7 @@ hr.highLevelCategory {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	margin-bottom: 90px;
+	margin-bottom: 0px;
 }
 
 .teammate {
@@ -528,6 +529,7 @@ hr.highLevelCategory {
 
 .firstImage {
 	margin-top: 16px;
+	padding-bottom: 0px;
 }
 
 .link {
@@ -603,7 +605,7 @@ p.researchStatText {
 
 #quote strong {
 	color: #26272C;
-	font-size: 24px;
+	font-size: 18pt;
 	text-indent: -0.5em;
 }
 
@@ -613,7 +615,7 @@ p.researchStatText {
 }
 
 #quote{
-	margin-bottom: 90px;
+	margin-bottom: 0px;
 	margin-top: 48px;
 }
 
@@ -823,7 +825,8 @@ video.userFlowVideo {
 		margin-right: 40px;
 		padding-left: 0px;
 		padding-right: 0px;
-		line-height: 1.7;
+		line-height: 1.4;
+		padding-top: 8px;
 		width: 176px;
 		border-top: 2px solid #000;
 		text-align: right;
@@ -844,6 +847,11 @@ video.userFlowVideo {
 	.headerHR {
 		margin-top: 40px;
 
+	}
+
+	.firstImage {
+		margin-top: 16px;
+		padding-bottom: 7vw;
 	}
 
 
@@ -1184,6 +1192,7 @@ video.userFlowVideo {
 
 	#quote {
 		width: 500px;
+		margin-bottom: 90px;
 	}
 
 	#problemImages {
@@ -1358,7 +1367,8 @@ video.userFlowVideo {
 		margin-right: 24px;
 		padding-left: 0px;
 		padding-right: 0px;
-		line-height: 1.7;
+		line-height: 1.4;
+		padding-top: 8px;
 		width: 150px;
 		border-top: 2px solid #000;
 		text-align: right;
@@ -1375,11 +1385,16 @@ video.userFlowVideo {
 
 	}
 
+	.firstImage {
+		margin-top: 16px;
+		padding-bottom: 7vw;
+	}
+
 	.basicText {
 		margin-top: 40px;
 		font-size: 13pt;
 		line-height: 1.8;
-		padding-bottom: 0px;
+		padding-bottom: 8px;
 	}
 
 	li {
@@ -1627,7 +1642,6 @@ video.userFlowVideo {
 		font-size: 13pt;
 		margin-bottom: 0px;
 		margin-top: 40px;
-		line-height: 1.7;
 		margin-left: 0px;
 		padding-left: 0px;
 	}
@@ -1644,6 +1658,7 @@ video.userFlowVideo {
 
 	#quote {
 		width: 500px;
+		margin-bottom: 90px;
 	}
 
 	#problemImages {
