@@ -46,7 +46,7 @@
 					<div class="sectionContent">
 						<p class="column basicText"><span>Overview:</span> <a href="https://www.braingate.org/" class="link">BrainGate,</a> a research institution at Brown University, is developing technologies that allow patients to control a computer interface with their brains. Their goal is to restore the independence of people affected by various neurologic diseases. While patients use this technology, the BrainGate researchers collect data on the patients’ cursor movements and clicks. In order to improve their technology, the researchers needed an intuitive way to visualize and analyze the data they collect. I worked with a team of Computer Science students at Brown University to design and develop an interactive data visualization tool for the BrainGate researchers. This project was done over the course of a semester as part of a Computer Science class at Brown titled “Creating Modern Web Applications.” Each student group was assigned a client in the Brown or Providence community, in addition to class assignments.</p>
 						<p class="column basicText"><span>Scope:</span> During this project we: Interviewed our users (the BrainGate researchers), wrote user stories, wireframed different design solutions, created high fidelity mockups, wrote specifications and requirements, researched frontend and backend technologies that would meet our needs, developed a working prototype, presented to our class and our client, had weekly meetings with the BrainGate engineering team (our client) and some of the researchers to understand their needs and get their feedback on ideas, wireframes, mockups and prototypes.</p>
-						<p class="column basicText"><span>Tools:</span> Google drive, Github, Sketch, Illustrator, pens and paper, whiteboards, Sublime, Google Chrome</p>
+						<p class="column basicText"><span>Tools:</span> Github, Sketch, Principle, Illustrator, Google drive, pens and paper, whiteboards, Sublime</p>
 						<p class="column basicText" style="margin-bottom: 0px;"><span>Team:</span></p>
 						<div class="team column">
 							<div class="teammate">
@@ -126,7 +126,6 @@
 					<h3 class="column">New Problem Statement</h3>
 					<div class="sectionContent">
 						<p class="column basicText">After conducting user interviews and learning more about the problem we redefined our problem statement:</p>
-						<div class="firstImage"></div>
 						<div class="brainGateImportant">
 							<p class="basicText"><strong>The BrainGate researchers need a way to organize their data, visualize patient cursor movements overtime and annotate data based on their observations.</strong></p>
 						</div>
@@ -148,10 +147,10 @@
 							<img src="images/BrainGateAssets/sketch1.jpg" alt="sketch">
 							<img src="images/BrainGateAssets/sketch2.jpg" alt="sketch">
 							<img src="images/BrainGateAssets/sketch3.jpg" alt="sketch">
+							<img src="images/BrainGateAssets/notesTimeline.jpeg" alt="sketch">
 						</div>
 						<p class="column basicText">Each time I met with the BrainGate team I got some feedback on the wireframes and continued to iterate. See the mockups section for descriptions of design decisions and the functions of specific parts of this data visualization.</p>
 						<div class="imageFit brainWirframes">
-							<img src="images/BrainGateAssets/notesTimeline.jpeg" alt="sketch">
 							<img src="images/BrainGateAssets/wireframe1.jpg" alt="wireframe">
 							<img src="images/BrainGateAssets/wireframe2.jpg" alt="wireframe">
 							<img src="images/BrainGateAssets/wireframe3.jpg" alt="wireframe">
@@ -182,15 +181,43 @@
 				<div class="section">
 					<h3 class="column">Mockups</h3>
 					<div class="sectionContent">
-						<p class="column basicText">This mockup has many parts to it. I will explain each section below.</p>
+						<p class="column basicText"></p>
 					</div>
 				</div>
 				<div class="imageFit fullImageContainer">
-					<img src="images/BrainGateAssets/mainMockupBrowser.png" alt="mockup" class="column">
-					<img src="images/BrainGateAssets/mockUpDiagram.jpg" alt="mockup diagram">
+					<!-- <img src="images/BrainGateAssets/mainMockupBrowser.png" alt="mockup" class="column"> -->
+					<!-- <img src="images/BrainGateAssets/addData.gif" alt="timeline preview" class="brainMockup">
+					<img src="images/BrainGateAssets/mockUpDiagram.jpg" alt="mockup diagram"> -->
 				</div>
 				<div class="section">
 					<div class="sectionContent">
+						<img src="images/BrainGateAssets/dateFilter.gif" alt="timeline preview" class="brainMockup">
+						<p class="column basicText"><span>Load the data into the program using filters:</span> In order to load the data into the program, the users can select specific intervals of data based on filters. For example, some of the filters include things like the date the data was recorded, the name of the patient and the type of task the patient was doing. As the researchers analyze the data, they will add notes and tags such as “distraction”, “jitter”, “jump” or other tags that they decide are necessary. They will then be able to filter for and open data based on these tags.</p>
+						<img src="images/BrainGateAssets/patientFilter.gif" alt="timeline preview" class="brainMockup">
+						<p class="column basicText"><span>Once the data is added in, the researcher can view the data in the graph section:</span> This is where the researchers can view the X and Y coordinates of the patients cursor. When the researchers are calibrating the system for the patient and testing different parameters, the researchers have the patients play a series of “games. ” In our mockups and prototypes we decided to focus on analyzing the data that was collected in this game. However, in the future, any cursor data (not just game data) could be analyzed using this program. In this game, the patient is aiming to move the cursor to the light blue target.</p>
+						<img src="images/BrainGateAssets/addDataButton.gif" alt="timeline preview" class="brainMockup">
+						<p class="column basicText">While the position of the patient’s cursor at any given moment is important, where the cursor was and where it will go in relation to its current position is also very important. To visualize this information, I included a line that shows the future of the cursors pathway as well as the past of the cursors pathway. There is also a “full view” where the researchers can view all of the cursor movements for the entire session with the patient.</p>
+						<p class="column basicText">The red dot is the “current” location of the patient’s cursor and the blue dot(s) is the place where the patient “clicked”.</p>
+						<img src="images/BrainGateAssets/graphSingleTrial.gif" alt="timeline preview" class="brainMockup">
+						<img src="images/BrainGateAssets/graphMultipleTrial.gif" alt="timeline preview" class="brainMockup">
+						<p class="basicText"><span>The user can annotate the data by adding notes at specific times.</span> For example, if a researcher sees a cursor jump at 0:20 seconds, they can add a note at that time with the tag “jump”. The user can refer back to these notes later or another researcher can review the notes to better understand the session.</p>
+						<img src="images/BrainGateAssets/mockupAddNote.jpg" alt="add note" class="brainMockup">
+						<!-- Confirm note -->
+						<p class="column basicText">If a user hovers over one of the notes they will see a preview on the timeline at the time that the note was taken.</p>
+						<img src="images/BrainGateAssets/noteinteractions.png" alt="timeline" class="column">
+						<!-- hover note -->
+						<p class="column basicText">If a user clicks on one of the notes it takes them to the time the note was taken on the timeline and graph.</p>
+						<!-- click note -->
+
+						<p class="column basicText"><span>Timeline:</span> One of the biggest challenges was visualizing X and Y coordinates over time. I used inspiration from YouTube as well as other video and music players to design a timeline that the researchers could use to play through or scrub through the “recording” of each session. The timeline includes markers to show that a note was added at a specific time.</p>
+						<img src="images/BrainGateAssets/timeline.jpg" alt="timeline" class="column">
+						<p class="column basicText">If the user hovers over a timeline marker then the note is lightly highlighted and if the user clicks on the timeline marker then the note is highlighted. They can also see a preview of the graph at that time by hovering.</p>
+						<img src="images/BrainGateAssets/timelineinteractions.png" alt="timeline" class="column">
+						<!-- hover timeline -->
+						<!-- click timeline -->
+
+					</div>
+					<!-- <div class="sectionContent">
 						<p class="column basicText"><span>Timeline:</span> One of the biggest challenges was visualizing X and Y coordinates over time. I used inspiration from YouTube as well as other video and music players to design a timeline that the researchers could use to play through or scrub through the “recording” of each session. The timeline includes markers to show that a note was added at a specific time.</p>
 						<img src="images/BrainGateAssets/timeline.jpg" alt="timeline" class="column">
 						<p class="column basicText">If the user hovers over a timeline marker then the note is lightly highlighted and if the user clicks on the timeline marker then the note is highlighted. They can also see a preview of the graph at that time by hovering.</p>
@@ -234,7 +261,7 @@
 							<img src="images/BrainGateAssets/mockupPatientFilter.jpg" alt="filter patient" class="brainMockup">
 						</div>
 						<p class="column basicText"><span>Three Views:</span> There is a “full view” where the researchers can view all of the cursor movements for the entire session with the patient. There is a one session view where the researcher can view only one trial at a time with lines indicating the pathway of the cursor. There is a parameters view where the researchers can view all of the specific parameters that were set during the session. A few of the most important parameters can be viewed in the full view and in the one session view, but a more extensive list of all the parameters can be seen in the parameters view. </p>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
