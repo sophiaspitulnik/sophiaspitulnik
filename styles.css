@@ -57,7 +57,9 @@ video.column {
 }
 
 .hideDesktop {
-	display: inline;
+	display: block;
+	width: 100%;
+	overflow: hidden;
 }
 
 #comingSoonMobil {
@@ -146,7 +148,7 @@ a {
 
 
 .landingPageNav {
-	display: block; 
+	/*display: block; */
 	width: 95%;
 	padding-top: 24px;
 	padding-bottom: 16px;
@@ -197,7 +199,7 @@ a {
 }
 
 #navigationGroup h1 {
-	margin-right: 72px;
+	margin-right: 0px;
 	line-height: 1.3;
 }
 
@@ -211,7 +213,7 @@ a {
 }
 
 #name h1:hover {
-	color: #1787FF
+	color: #1787FF;
 }
 
 .headerHR {
@@ -244,6 +246,8 @@ main h3, main h4, main p, #introMessage {
 #introMessage {
 	padding-top: 80px;
 	padding-bottom: 40px;
+	width: 100%;
+    padding-right: 16px;
 }
 
 #introMessage h2 {
@@ -277,6 +281,13 @@ main h3, main h4, main p, #introMessage {
 	z-index: 51; 
 	position: relative; 
 	margin-top: 24px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+
 }
 
 .projectPreviews {
@@ -516,6 +527,7 @@ hr.highLevelCategory {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	margin-bottom: 0px;
+
 }
 
 .teammate {
@@ -532,6 +544,7 @@ hr.highLevelCategory {
 	padding-top: 0px;
 	padding-right: 0px;
 	margin-left: 0px;
+	font-size: 14pt;
 }
 
 .teammateInfo p {
@@ -861,6 +874,7 @@ video.userFlowVideo {
 		margin-left: 120px;
 		display: flex;
 		flex-direction: row;
+		align-items: baseline;
 	}
 
 	.section h3 {
@@ -902,11 +916,12 @@ video.userFlowVideo {
 
 
 	.basicText {
-		margin-top: 40px;
+		margin-top: 24px;
 		font-size: 13pt;
 		line-height: 1.7;
 		padding-bottom: 0px;
 		margin-bottom: 0;
+		padding-bottom: 0px;
 	}
 
 	li {
@@ -946,10 +961,10 @@ video.userFlowVideo {
 
 	.teammate {
 		display: flex;
-		width: 40%;
+		width: 28%;
 		flex-direction: row;
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 24px;
+		padding-right: 12px;
 		margin-top: 0px;
 		margin-bottom: 0px;
 		justify-content: flex-start;
@@ -959,8 +974,16 @@ video.userFlowVideo {
 	.teammate img {
 		align-self: flex-start;
 		padding-right: 16px;
-		width: 35%;
+		width: 25%;
 		top: 0;
+	}
+
+	.teammate p {
+		margin: 0px;
+		padding-top: 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		font-size: 10pt;
 	}
 
 	div.projectPreviews.column, div.projectPreviewsNextProj.column {
@@ -1084,11 +1107,11 @@ video.userFlowVideo {
 		margin-right: 5vw;
 		margin-top: 0px;
 		background-color: #F5F5F8; 
-		height: calc(80vh - 88px);
+		height: calc(80vh - 70px);
 		width: calc(90% - 96px);
 		padding-right: 48px;
 		padding-left: 48px;
-		padding-top: 152px;
+		padding-top: 100px;
 	}
 
 	#about .section {
@@ -1134,8 +1157,8 @@ video.userFlowVideo {
 	.landingPageNav {
 	    display: block;
 	    width: 90%;
-	    padding-top: 40px;
-	    padding-bottom: 0px;
+	    padding-top: 26px;
+    	padding-bottom: 16px;
 	    padding-left: 5vw;
 	    padding-right: 5vw;
 	    position: fixed;
@@ -1215,11 +1238,18 @@ video.userFlowVideo {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
-	.twoColumns img, .twoColumns p {
-		width: 47%;
+	.twoColumns img {
+		max-width: 50%;
 		align-self: center;
+	}
+
+	.twoColumns p {
+		max-width: 30%;
+		align-self: center;
+		margin-top: 0px;
 	}
 		
 
@@ -1441,10 +1471,10 @@ video.userFlowVideo {
 	}
 
 	.basicText {
-		margin-top: 40px;
+		margin-top: 24px;
 		font-size: 13pt;
 		line-height: 1.8;
-		padding-bottom: 8px;
+		padding-bottom: 0px;
 		margin-bottom: 0;
 	}
 
@@ -1546,11 +1576,11 @@ video.userFlowVideo {
 		margin-right: 5vw;
 		margin-top: 0px;
 		background-color: #F5F5F8; 
-		height: calc(80vh - 88px);
+		height: calc(80vh - 70px);
 		width: calc(90% - 96px);
 		padding-right: 48px;
 		padding-left: 48px;
-		padding-top: 152px;
+		padding-top: 100px;
 	}
 
 	#about .section {
@@ -1564,8 +1594,8 @@ video.userFlowVideo {
 	.landingPageNav {
 		display: block; 
 		width: 90%;
-		padding-top: 32px;
-		padding-bottom: 0px;
+		padding-top: 26px;
+    	padding-bottom: 16px;
 		padding-left: 5vw;
 		padding-right: 5vw;
 		position: fixed; 
@@ -1609,7 +1639,7 @@ video.userFlowVideo {
 	#navigationGroup {
 		margin-left: 0px;
 		margin-top: 0px;
-		margin-top: 16px;
+		margin-top: 0px;
 		text-align: right;
   		display:inline;
   		justify-content:right;
@@ -1739,13 +1769,19 @@ video.userFlowVideo {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
-	.twoColumns img, .twoColumns p {
-		width: 40%;
+	.twoColumns img {
+		max-width: 50%;
 		align-self: center;
 	}
 
+	.twoColumns p {
+		max-width: 30%;
+		align-self: center;
+		margin-top: 0px;
+	}
 	
 
 	.votingMockup {
@@ -1784,20 +1820,29 @@ video.userFlowVideo {
 
 	.teammate {
 		display: flex;
-		width: 36%;
+		width: 40%;
 		flex-direction: row;
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 24px;
+		padding-right: 12px;
 		margin-top: 0px;
 		margin-bottom: 0px;
-		margin-left: 8px;
-		margin-right: 8px;
+		justify-content: flex-start;
+		align-self: flex-start;
 	}
 
 	.teammate img {
-		align-self: center;
+		align-self: flex-start;
 		padding-right: 16px;
-		width: 35%;
+		width: 25%;
+		top: 0;
+	}
+
+	.teammate p {
+		margin: 0px;
+		padding-top: 0px;
+		padding-right: 0px;
+		margin-left: 0px;
+		font-size: 10pt;
 	}
 
 
